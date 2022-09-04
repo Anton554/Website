@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    {% load static %}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'qr_code/css/qr_code.css' %}">
+
+</head>
+<body>
+<div class = "container">
+    <div class = "row">
+        <div class="col-12">
+            <img class="img-fluid" src="{% static 'qr_code/img/logo.jpg' %}">
+            <hr>
+            <h1 class="text-center">Бизнес Асистент</h1>
+            <h5 class="text-center">Комплексные услуги для бизнеса:</h5>
+
+        </div>
+    </div>
+    <div class = "row">
+        <div class="col-1">
+
+        </div>
+        <div class="col-11">
+            <p class="text-start">
+                Супер услуга 1 </br>
+                Супер услуга 2 </br>
+                Супер услуга 3 </br>
+                Супер услуга 4 </br>
+                Супер услуга 5 </br>
+            </p>
+        </div>
+    </div>
+    <hr>
+    <div class = "row">
+        <div class="col-1"></div>
+        <div class="col-5"><button type="button" class="my_button btn btn-primary btn-sm img-fluid text-start"><img style="width: 30px; margin-right: 10px;" src="{% static 'qr_code/img/phone.svg' %}">Позвонить</button></div>
+        <div class="col-5"><button type="button" class="my_button btn btn-primary btn-sm img-fluid text-start"><img style="width: 30px; margin-right: 10px;" src="{% static 'qr_code/img/email.svg' %}">Написать</button></div>
+        <div class="col-1"></div>
+    </div>
+    <div class = "row">
+        <div class="col-1"></div>
+        <div class="col-5"><button type="button" class="my_button btn btn-primary btn-sm img-fluid">Вконтакте Чат</button></div>
+        <div class="col-5"><button type="button" class="my_button btn btn-primary btn-sm img-fluid text-start"><img style="width: 30px; margin-right: 10px;" src="{% static 'qr_code/img/telegram.svg' %}">Telegram</button></div>
+        <div class="col-1"></div>
+    </div>
+    <div class = "row">
+        <div class="col-1"></div>
+        <div class="col-10"><button type="button" class="my_button btn btn-primary btn-sm img-fluid" style="background: #f06e38; border-color: #f06e38; margin-bottom: 0em; padding: 10px; border-radius: 1.58em; height: 50px; width: 500px;">Большая кнопка</button></div>
+        <div class="col-1"></div>
+    </div>
+</div>
+
+</body>
+</html>

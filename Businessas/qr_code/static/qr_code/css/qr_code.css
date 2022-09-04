@@ -1,0 +1,17 @@
+div[class^=col]{
+    /*background: #8CC7D9;*/
+    /*border: 1px solid #6B6ACD;*/
+    padding-right: 5px;
+    padding-left: 5px;
+
+
+}
+
+.my_button{
+    height: 50px;
+    width: 247px;
+    border-radius: 0.5rem;
+    margin-bottom: 15px;
+    min-width: 130px;
+    background: #467bf6;
+}
