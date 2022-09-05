@@ -9,9 +9,45 @@ div[class^=col]{
 
 .my_button{
     height: 50px;
-    width: 247px;
+    width: 100%;
     border-radius: 0.5rem;
     margin-bottom: 15px;
     min-width: 130px;
-    background: #467bf6;
+    background: #ff0000;
+    border-color: #ff0000;
+}
+
+.my_button2{
+    height: 50px;
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    min-width: 130px;
+    background: #ff0000;
+    border-color: #ff0000;
+}
+
+h1 {
+    font-family: 'Rubik';
+    font-weight: 900;
+}
+
+h5 {
+    font-family: 'Rubik', sans-serif;
+}
+
+h1::first-letter{
+    color:#F00;
+}
+
+p::first-letter{
+    color:#F00;
+}
+
+p {
+    /*font-size: 16px;*/
+    font-size: 90%;
+    margin-bottom: 5px;
+    font-family: 'Rubik', sans-serif;
 }
