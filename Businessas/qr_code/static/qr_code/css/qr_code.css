@@ -8,6 +8,7 @@ div[class^=col]{
 }
 
 .my_button{
+    font-family: 'Rubik_rg';
     height: 50px;
     width: 100%;
     border-radius: 0.5rem;
@@ -18,6 +19,7 @@ div[class^=col]{
 }
 
 .my_button2{
+    font-family: 'Rubik_rg';
     height: 50px;
     width: 100%;
     border-radius: 0.5rem;
@@ -51,6 +53,11 @@ h6 {
     margin-bottom: 15px;
 }
 
+@font-face {
+    font-family: 'Rubik_rg';
+    src: local('Rubik_rg'),
+    url(../fonts/rubik-reg.ttf);
+}
 
 p::first-letter{
     color:#e50e3a;
