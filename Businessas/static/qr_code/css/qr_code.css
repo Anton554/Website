@@ -1,0 +1,75 @@
+div[class^=col]{
+    /*background: #8CC7D9;*/
+    /*border: 1px solid #6B6ACD;*/
+    padding-right: 5px;
+    padding-left: 5px;
+
+
+}
+
+.my_button{
+    font-family: 'Rubik_rg';
+    height: 50px;
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 15px;
+    min-width: 130px;
+    background-color: #e50e3a;
+    border-color: #e50e3a;
+}
+
+.my_button2{
+    font-family: 'Rubik_rg';
+    height: 50px;
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    min-width: 130px;
+    background-color: #e50e3a;
+    border-color: #e50e3a;
+    padding-right: 38px;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    /*color: #e50e3a;*/
+    background-color: #e50e3a;
+    border-color: #e50e3a;
+}
+
+h1 {
+    font-family: 'Rubik_bl';
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+@font-face {
+    font-family: 'Rubik_bl';
+    src: local('Rubik_bl'),
+    url(../fonts/rubik-extrabold.ttf);
+}
+
+h6 {
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 15px;
+}
+
+@font-face {
+    font-family: 'Rubik_rg';
+    src: local('Rubik_rg'),
+    url(../fonts/rubik-reg.ttf);
+}
+
+p::first-letter{
+    color:#e50e3a;
+}
+
+ul {
+    /*font-size: 16px;*/
+    font-size: 90%;
+    margin-bottom: 5px;
+    font-family: 'Rubik', sans-serif;
+}
+
+ul {
+    list-style-image: url(../img/left.png);
+}
