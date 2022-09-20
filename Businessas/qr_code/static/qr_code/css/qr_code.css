@@ -36,18 +36,16 @@ div[class^=col]{
   box-shadow: none !important;
 }
 
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
-    /*color: #e50e3a;*/
+.my_button:hover, .my_button:focus, .my_button:active{
+    box-shadow: 5px 5px 8px tomato;
     background-color: #e50e3a;
     border-color: #e50e3a;
 }
 
-.my_button2:hover{
+.my_button2:hover, .my_button2:focus, .my_button2:active{
     box-shadow: 5px 5px 8px tomato;
-}
-
-.my_button:hover{
-    box-shadow: 5px 5px 8px tomato;
+    background-color: #e50e3a;
+    border-color: #e50e3a;
 }
 
 h1 {
