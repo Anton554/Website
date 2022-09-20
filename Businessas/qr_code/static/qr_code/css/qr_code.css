@@ -36,6 +36,14 @@ div[class^=col]{
     border-color: #e50e3a;
 }
 
+.my_button2:hover{
+    box-shadow: 5px 5px 8px tomato;
+}
+
+.my_button:hover{
+    box-shadow: 5px 5px 8px tomato;
+}
+
 h1 {
     font-family: 'Rubik_bl';
     font-weight: 900;
