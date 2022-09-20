@@ -30,6 +30,12 @@ div[class^=col]{
     border-color: #e50e3a;
     padding-right: 38px;
 }
+
+.btn:focus, .btn:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
     /*color: #e50e3a;*/
     background-color: #e50e3a;
