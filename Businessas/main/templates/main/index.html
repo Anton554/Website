@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    {% load static %}
+
+    <!-- Bootstrap CSS File -->
+    <link href="{% static 'main/lib/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+
+    <link href="{% static 'main/lib/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+    <link href="{% static 'main/lib/animate/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'main/lib/ionicons/css/ionicons.min.css' %}" rel="stylesheet">
+    <link href="{% static 'main/lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+    <link href="{% static 'main/lib/lightbox/css/lightbox.min.css' %}" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="{% static 'main/css/style.css' %}" rel="stylesheet">
+</head>
+<body>
+<section id="headers"></section>
+<header id="header">
+
+    <div class = "container" style="max-width: 100%">
+        <div class = "row">
+            <div class="col-12">
+
+        <div class="logo float-left">
+             <a href="#headers" class="scrollto img-fluid"><img src="{% static 'main/img/logo.png' %}"></a>
+        </div>
+
+        <nav class="main-nav float-right d-none d-lg-block">
+            <ul>
+                <li><a href="#about">О компании</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#portfolio">Сотрудники</a></li>
+                <li><a href="#team2">Клиенты</a></li>
+                <li><a href="#footer" style="padding-left: 100px;">8(800)555-35-35</a></li>
+            </ul>
+        </nav><!-- .main-nav -->
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container"  style="max-width: 100%">
+    <div class ="row" style="margin-top: 103px;">
+            <div class="col-6 block_1"><img class="img-fluid" src="{% static 'main/img/ob_photo.png' %}"></div>
+            <div class="col-6 block_1">
+                <div class="col-12">
+                <h1 class="text-center"><span style="color: #e50e3a">Б</span>изнес <span style="color: #e50e3a">А</span>ссистент</h1>
+                <div class="my_txt text-left">Полный спектр услуг  для успешного ведения бизнеса</div>
+                <div class="my_txt" style="color: #e50e3a; font-size: 24px;">Бухгалтерия |</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section id="about">
+    <div class="container"  style="max-width: 100%">
+        <div class = "row">
+            <div class="patern" style="margin-left: 5px;">
+                    <div class="container d-flex align-items-center justify-content-center" style="margin-top: 90px;">
+                        <dev class="phone_zg">О компании</dev>
+                    </div>
+                <div class="container d-flex align-items-center justify-content-center">
+                    <dev class="phone_wb">Мы современая компания с быстрыми и уникальными решениями для вашего бизнеса. На данном рынке более 20 лет, мы постоянно развиваемся и не стоим на месте. У нас очень уютный офис, в котором вас всегда встретят с улыбкой и угостят вкусным кофе. Обслуживаясь в нашей компании, вы получаете не просто бухгалтера, а целую команду специалистов, которые сделают все для того, чтобы Вы получили максимальную пользу и комфорт</dev>
+                </div>
+                </dev>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="nuvmers">
+    <div class="container" style="max-width: 100%">
+        <div class="row">
+            <div class="position-relative nuvmers_bg">
+                <div class="container d-flex align-items-center justify-content-center phone_zg" style="margin-top: 60px;">О нас в цифрах</div>
+                <div class="container d-flex align-items-center justify-content-center phone_zg" style="margin-top: 50px;">
+                    <div style="margin-right: 5%; margin-left: 5%; color: #e50e3a; white-space: nowrap">
+                        <span data-toggle="counter-up" style="margin-left: 5%;">20</span> лет
+                        <div class="text_o_nas text-center">Успешной работы<br> нашей фирмы</div>
+                    </div>
+                    <div style="margin-right: 5%; margin-left: 5%; color: #e50e3a">
+                        <span data-toggle="counter-up" style="margin-left: 20%;">200 </span>
+                        <div class="text_o_nas text-center">Обслуживаемых<br>компаний</div>
+                    </div>
+                    <div style="margin-right: 5%; margin-left: 5%; color: #e50e3a">
+                        <span data-toggle="counter-up" style="margin-left: 5%;">800000</span>+
+                        <div class="text_o_nas text-center">Сданных<br>отчетов</div>
+                    </div>
+                    <div style="margin-right: 5%; margin-left: 5%; color: #e50e3a; white-space: nowrap">
+                        <span data-toggle="counter-up">100</span> млн руб
+                        <div class="text_o_nas text-center">Экономии денег<br>наших клиентов</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!--<section id="team2">-->
+<!--    <p>!!!</p>-->
+<!--</section>-->
+<!-- JavaScript Libraries -->
+<script src="{% static 'main/lib/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'main/lib/easing/easing.min.js' %}"></script>
+<script src="{% static 'main/lib/wow/wow.min.js' %}"></script>
+<script src="{% static 'main/lib/waypoints/waypoints.min.js' %}"></script>
+<script src="{% static 'main/lib/counterup/counterup.min.js' %}"></script>
+<!-- Template Main Javascript File -->
+<script src="{% static 'main/js/main.js' %}"></script>
+</body>
+</html>
