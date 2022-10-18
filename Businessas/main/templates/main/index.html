@@ -18,11 +18,22 @@
     <link href="{% static 'main/lib/ionicons/css/ionicons.min.css' %}" rel="stylesheet">
     <link href="{% static 'main/lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
     <link href="{% static 'main/lib/lightbox/css/lightbox.min.css' %}" rel="stylesheet">
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="https://bootstraptema.ru/snippets/effect/2016/ihe/effects.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    </body>
 
 
     <!-- Main Stylesheet File -->
     <link href="{% static 'main/css/style.css' %}" rel="stylesheet">
 
+
+</head>
+<body>
+<div class="osnova">
     <script>
         var TxtType = function(el, toRotate, period) {
             this.toRotate = toRotate;
@@ -81,9 +92,6 @@
             document.body.appendChild(css);
         };
     </script>
-
-</head>
-<body>
 <section id="headers"></section>
 <header id="header">
 
@@ -108,38 +116,48 @@
         </div>
     </div>
 </header>
-<div class="container"  style="max-width: 100%">
+<div class="container" style="max-width: 100%; overflow: hidden">
     <div class ="row" style="margin-top: 103px;">
         <div class="col-6 block_1"><img class="img-fluid" src="{% static 'main/img/ob_photo.png' %}"></div>
-        <div class="col-6 block_1">
+        <div class="col-6 block_1 ">
             <div class="col-12">
-                <h1 class="text-left" style="margin-left: 72px;"><span style="color: #e50e3a">Б</span>изнес <span style="color: #e50e3a">А</span>ссистент</h1>
+                <h1 class="text-left" style="margin-left: 2%;"><span style="color: #e50e3a">Б</span>изнес <span style="color: #e50e3a">А</span>ссистент</h1>
                 <div class="my_txt text-left">Полный спектр услуг  для успешного ведения бизнеса</div>
 
-                <div class="my_txt typewrite" data-period="1000" data-type='[ "Бухгалтерия", "Налоги", "Юристы" ]' style="color: #e50e3a;"><span class="wrap"></span></div>
+                <div class="my_txt text-left typewrite" data-period="1000" data-type='[ "Бухгалтерия", "Налоги", "Юристы" ]' style="color: #e50e3a;"><span class="wrap"></span></div>
+                <br>
 
             </div>
         </div>
     </div>
 </div>
-</div>
 <section id="about">
-    <div class="container"  style="max-width: 100%">
+    <div class="container" style="max-width: 100%; overflow: hidden"">
         <div class = "row">
             <div class="patern" style="margin-left: 5px;">
-                <div class="container d-flex align-items-center justify-content-center" style="margin-top: 90px;">
-                    <dev class="phone_zg">О компании</dev>
-                </div>
-                <div class="container d-flex align-items-center justify-content-center">
-                    <dev class="phone_wb">Мы современая компания с быстрыми и уникальными решениями для вашего бизнеса. На данном рынке более 20 лет, мы постоянно развиваемся и не стоим на месте. У нас очень уютный офис, в котором вас всегда встретят с улыбкой и угостят вкусным кофе. Обслуживаясь в нашей компании, вы получаете не просто бухгалтера, а целую команду специалистов, которые сделают все для того, чтобы Вы получили максимальную пользу и комфорт</dev>
-                </div>
+                <div class="fon">
+
+                    <div class="container d-flex align-items-center justify-content-center" style="margin-top: 90px;">
+                        <dev class="phone_zg">О компании</dev>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="container d-flex align-items-center justify-content-center">
+                        <dev class="phone_wb">Мы современая компания с быстрыми и уникальными решениями для вашего бизнеса. На данном рынке более 20 лет, мы постоянно развиваемся и не стоим на месте. У нас очень уютный офис, в котором вас всегда встретят с улыбкой и угостят вкусным кофе. Обслуживаясь в нашей компании, вы получаете не просто бухгалтера, а целую команду специалистов, которые сделают все для того, чтобы Вы получили максимальную пользу и комфорт.</dev></div>
+                    <br>
+                    <br>
+                    <br>
+                    </div>
+
                 </dev>
             </div>
         </div>
     </div>
 </section>
 <section id="nuvmers">
-    <div class="container" style="max-width: 100%">
+    <div class="container" style="max-width: 100%; overflow: hidden">
         <div class="row">
             <div class="position-relative nuvmers_bg">
                 <div class="container d-flex align-items-center justify-content-center phone_zg" style="margin-top: 60px;">О нас в цифрах</div>
@@ -161,14 +179,139 @@
                         <div class="text_o_nas text-center">Экономии денег<br>наших клиентов</div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
 </section>
-<!--<section id="team2">-->
-<!--    <p>!!!</p>-->
-<!--</section>-->
+<section id="services" style="background: #f5f5f5">
+    <div class="container" style='overflow: hidden; margin-left: 5%; margin-right: 5%;'>
+
+        <div class="row">
+            <br>
+            <div class="col-lg-12 text-center">
+                <p><br></p>
+
+                <h1 class="phone_zg" style="margin-top: 0px; background: #f5f5f5">Услуги</h1>
+            </div>
+
+            <div class="container_eff">
+                <div class="content_eff">
+                    <div class="content_eff-overlay"></div>
+                    <img class="content_eff-image" src="{% static 'main/img/Кадр c5761e1e55f6a52cdaa468846d6ddb90.png' %}">
+                    <div class="content_eff-details fadeIn-top">
+                        <h5>Бухгалтерское обслуживание</h5>
+                        <p>Подготовим платёжки, счета,
+                            накладные. Проведем сверки.
+                            Сдадим отчеты.
+                            Правильно трудоустроим
+                            сотрудников,
+                            начислим зарплату,
+                            оформим отпуск и больничный.
+                            Быстро разблокируем счет</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container_eff">
+                <div class="content_eff">
+                    <div class="content_eff-overlay"></div>
+                    <img class="content_eff-image" src="{% static 'main/img/Кадр c5761e1e55f6a52cdaa468846d6ddb90.png' %}">
+                    <div class="content_eff-details fadeIn-top">
+                        <h3>This is a title</h3>
+                        <p>This is a short description</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container_eff">
+                <div class="content_eff">
+                    <div class="content_eff-overlay"></div>
+                    <img class="content_eff-image" src="{% static 'main/img/Кадр c5761e1e55f6a52cdaa468846d6ddb90.png' %}">
+                    <div class="content_eff-details fadeIn-top">
+                        <h3>This is a title</h3>
+                        <p>This is a short description</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container_eff">
+                <div class="content_eff">
+                    <div class="content_eff-overlay"></div>
+                    <img class="content_eff-image" src="{% static 'main/img/Кадр c5761e1e55f6a52cdaa468846d6ddb90.png' %}">
+                    <div class="content_eff-details fadeIn-top">
+                        <h3>This is a title</h3>
+                        <p>This is a short description</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container_eff">
+                <div class="content_eff">
+                    <div class="content_eff-overlay"></div>
+                    <img class="content_eff-image" src="{% static 'main/img/Кадр c5761e1e55f6a52cdaa468846d6ddb90.png' %}">
+                    <div class="content_eff-details fadeIn-top">
+                        <h3>This is a title</h3>
+                        <p>This is a short description</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container_eff">
+                <div class="content_eff">
+                    <div class="content_eff-overlay"></div>
+                    <img class="content_eff-image" src="{% static 'main/img/Кадр c5761e1e55f6a52cdaa468846d6ddb90.png' %}">
+                    <div class="content_eff-details fadeIn-top">
+                        <h3>This is a title</h3>
+                        <p>This is a short description</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container_eff">
+                <div class="content_eff">
+                    <div class="content_eff-overlay"></div>
+                    <img class="content_eff-image" src="{% static 'main/img/Кадр c5761e1e55f6a52cdaa468846d6ddb90.png' %}">
+                    <div class="content_eff-details fadeIn-top">
+                        <h3>This is a title</h3>
+                        <p>This is a short description</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container_eff">
+                <div class="content_eff">
+                    <div class="content_eff-overlay"></div>
+                    <img class="content_eff-image" src="{% static 'main/img/Кадр c5761e1e55f6a52cdaa468846d6ddb90.png' %}">
+                    <div class="content_eff-details fadeIn-top">
+                        <h3>This is a title</h3>
+                        <p>This is a short description</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container_eff">
+                <div class="content_eff">
+                    <div class="content_eff-overlay"></div>
+                    <img class="content_eff-image" src="{% static 'main/img/Кадр c5761e1e55f6a52cdaa468846d6ddb90.png' %}">
+                    <div class="content_eff-details fadeIn-top">
+                        <h3>Бухгалтерское обслуживание</h3>
+                        <p>This is a short description</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container_eff">
+                <div class="content_eff">
+                </div>
+            </div>
+
+
+        <hr>
+
+    </div>
+    </div>
+</section>
+</div>
 <!-- JavaScript Libraries -->
 <script src="{% static 'main/lib/jquery/jquery.min.js' %}"></script>
 <script src="{% static 'main/lib/easing/easing.min.js' %}"></script>
