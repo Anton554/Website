@@ -5,7 +5,7 @@ div[class^=col]{
   padding-left: 5px;
 }
 
-.osnova { max-width: 1000px; margin:0 auto;}
+.osnova { max-width: 1350px; margin:0 auto;}
 
 @font-face {
   font-family: 'Rubik_lg';
@@ -262,7 +262,7 @@ h1{
 
 @media screen and (min-width: 900px){
   .container_eff{
-    width: 31%;
+    width: 33%;
   }
 }
 
