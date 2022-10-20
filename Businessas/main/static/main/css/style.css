@@ -16,7 +16,7 @@ div[class^=col]{
 .patern{
   background: url(../img/patern.svg) repeat-x;
   width: 100%;
-  height: 570px;
+  height: auto;
 }
 
 .phone_wb{
