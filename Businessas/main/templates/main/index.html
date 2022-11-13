@@ -10,7 +10,6 @@
 
     <!-- Bootstrap CSS Filez -->
     <link href="{% static 'main/lib/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
-
     <!-- Libraries CSS Files -->
 
     <link href="{% static 'main/lib/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
@@ -18,7 +17,6 @@
     <link href="{% static 'main/lib/ionicons/css/ionicons.min.css' %}" rel="stylesheet">
     <link href="{% static 'main/lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
     <link href="{% static 'main/lib/lightbox/css/lightbox.min.css' %}" rel="stylesheet">
-<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
     <link rel="stylesheet" href="https://bootstraptema.ru/snippets/effect/2016/ihe/effects.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
@@ -91,113 +89,66 @@
             document.body.appendChild(css);
         };
     </script>
-<section id="headers"></section>
-<header id="header">
+    <section id="headers"></section>
+    <header id="header">
 
-    <div class = "container" style="max-width: 1350px; margin:0 auto;">
-        <div class = "row">
-            <div class="col-12">
+        <div class = "container" style="max-width: 1350px; margin:0 auto;">
+            <div class = "row">
+                <div class="col-12">
 
-                <div class="logo float-left">
-                    <a href="#headers" class="scrollto img-fluid"><img src="{% static 'main/img/logo.png' %}"></a>
+                    <div class="logo float-left">
+                        <a href="#headers" class="scrollto img-fluid"><img style="margin-top: auto; margin-bottom: auto;" src="{% static 'main/img/logo.png' %}"></a>
+                    </div>
+
+                    <nav class="main-nav float-right d-none d-lg-block">
+                        <ul>
+                            <li><a href="#about">О компании</a></li>
+                            <li><a href="#services">Услуги</a></li>
+                            <li><a href="#team">Сотрудники</a></li>
+                            <li><a href="#testimonials">Клиенты</a></li>
+                            <li><a href="tel:8 (910) 748-02-345" style="padding-left: 100px;">8 (910) 748-02-345</a></li>
+                        </ul>
+                    </nav>
                 </div>
-
-                <nav class="main-nav float-right d-none d-lg-block">
-                    <ul>
-                        <li><a href="#about">О компании</a></li>
-                        <li><a href="#services">Услуги</a></li>
-                        <li><a href="#portfolio">Сотрудники</a></li>
-                        <li><a href="#team2">Клиенты</a></li>
-                        <li><a href="#footer" style="padding-left: 100px;">8(800)555-35-35</a></li>
-                    </ul>
-                </nav>
             </div>
         </div>
-    </div>
-</header>
-<!--    <nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky">-->
-<!--        <div class="container">-->
-<!--            <div>-->
-<!--                <a href="index-1.html" class="logo text-uppercase">-->
-<!--                    <img src="images/logo-light.png" alt="" class="logo-light" height="35" />-->
-<!--                    <img src="images/logo-dark.png" alt="" class="logo-dark" height="35" />-->
-<!--                </a>-->
-<!--            </div>-->
-
-<!--            &lt;!&ndash; <a class="navbar-brand" href="#">Dealarc</a> &ndash;&gt;-->
-<!--            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"-->
-<!--                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">-->
-<!--                <span class="mdi mdi-menu"></span>-->
-<!--            </button>-->
-
-<!--            <div class="collapse navbar-collapse" id="navbarCollapse">-->
-<!--                <ul class="navbar-nav ml-auto">-->
-<!--                    <li class="nav-item active">-->
-<!--                        <a class="nav-link" href="#home">Home</a>-->
-<!--                    </li>-->
-<!--                    <li class="nav-item">-->
-<!--                        <a class="nav-link" href="#services">Services</a>-->
-<!--                    </li>-->
-<!--                    <li class="nav-item">-->
-<!--                        <a class="nav-link" href="#features">Features</a>-->
-<!--                    </li>-->
-<!--                    <li class="nav-item">-->
-<!--                        <a class="nav-link" href="#pricing">Pricing</a>-->
-<!--                    </li>-->
-<!--                    <li class="nav-item">-->
-<!--                        <a class="nav-link" href="#team">Team</a>-->
-<!--                    </li>-->
-<!--                    <li class="nav-item">-->
-<!--                        <a class="nav-link" href="#blog">Blog</a>-->
-<!--                    </li>-->
-<!--                    <li class="nav-item">-->
-<!--                        <a class="nav-link" href="#contact">Contact</a>-->
-<!--                    </li>-->
-<!--                </ul>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </nav>-->
-<div class="container" style="max-width: 100%; overflow: hidden">
-    <div class ="row" style="margin-top: 103px;">
-        <div class="col-lg-6 block_1"><img class="img-fluid" src="{% static 'main/img/ob_photo.png' %}"></div>
-        <div class="col-lg-6 block_1 ">
+    </header>
+    <div class="container" style="max-width: 100%; overflow: hidden">
+    <div class ="row" style="margin-top: 70px;">
+        <div class="col-md-6 col-sm-12 block_1"><img class="img-fluid" src="{% static 'main/img/ob_photo.png' %}"></div>
+        <div class="col-md-6 col-sm-12 block_1 ">
             <div class="col-12">
-                <h1 class="text-left" style="margin-left: 2%; font-family: Rubik-ext"><span style="color: #e50e3a">Б</span>изнес <span style="color: #e50e3a">А</span>ссистент</h1>
-                <div class="my_txt text-left">Полный спектр услуг  для успешного ведения бизнеса</div>
+                <div class="">
+                    <h1 class="text-left" style="margin-left: 2%; font-family: Rubik-ext"><span style="color: #e50e3a">Б</span>изнес <span style="color: #e50e3a">А</span>ссистент</h1>
+                    <div class="my_txt text-left">Полный спектр услуг  для успешного ведения бизнеса</div>
 
-                <div class="my_txt text-left typewrite" data-period="1000" data-type='[ "Бухгалтерия", "Налоги", "Юристы" ]' style="color: #e50e3a;"><span class="wrap"></span></div>
-                <br>
-
+                    <div class="my_txt text-left typewrite" data-period="1000" data-type='[ "Бухгалтерия", "Налоги", "Юристы" ]' style="color: #e50e3a;"><span class="wrap"></span></div>
+                    <br>
+                </div>
             </div>
         </div>
     </div>
 </div>
-<section id="about">
-    <div class="container" style="max-width: 100%; overflow: hidden"">
+    <section id="about">
+    <div class="container" style="max-width: 100%; overflow: hidden">
         <div class = "row">
             <div class="patern" style="margin-left: 5px;">
                 <div class="fon">
 
                     <div class="container d-flex align-items-center justify-content-center" style="margin-top: 90px;">
                         <dev class="phone_zg">О компании</dev>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
+                        <br><br><br><br>
                     </div>
                     <div class="container d-flex align-items-center justify-content-center">
-                        <dev class="phone_wb" style="padding-bottom: 5%;padding-left: 5%; padding-right: 5%;">Мы современая компания с быстрыми и уникальными решениями для вашего бизнеса. На данном рынке более 20 лет, мы постоянно развиваемся и не стоим на месте. У нас очень уютный офис, в котором вас всегда встретят с улыбкой и угостят вкусным кофе. Обслуживаясь в нашей компании, вы получаете не просто бухгалтера, а целую команду специалистов, которые сделают все для того, чтобы Вы получили максимальную пользу и комфорт.</dev></div>
-                    <br>
-                    <br>
-                    <br>
+                        <dev class="phone_wb" style="padding-bottom: 5%;padding-left: 5%; padding-right: 5%;">Мы современая компания с быстрыми и уникальными решениями для вашего бизнеса. На данном рынке более 20 лет, мы постоянно развиваемся и не стоим на месте. У нас очень уютный офис, в котором вас всегда встретят с улыбкой и угостят вкусным кофе. Обслуживаясь в нашей компании, вы получаете не просто услугу, а целую команду специалистов, которые сделают все для того, чтобы Вы получили максимальную пользу и комфорт.</dev></div>
+                    <br><br><br>
                     </div>
-
                 </dev>
             </div>
         </div>
     </div>
 </section>
-<section id="nuvmers">
+    <section id="numbers">
     <div class="container" style="max-width: 100%; overflow: hidden">
         <div class="row">
             <div class="col-12 text-center phone_zg" style="margin-top: 60px;">О нас в цифрах</div>
@@ -225,7 +176,7 @@
         <p><br></p>
     </div>
 </section>
-<section id="services" style="background: #f5f5f5">
+    <section id="services" style="background: #f5f5f5">
     <div class="container" style='overflow: hidden; margin-left: 15%; margin-right: 15%;'>
 
         <div class="row">
@@ -393,6 +344,7 @@
                 <div class="content_eff">
                     <div class="content_eff-overlay"></div>
                     <img class="content_eff-image" src="{% static 'main/img/Кадр c5761e1e55f6a52cdaa468846d6ddb90.png' %}">
+<!--                    <img class="content_eff-image" src="{% static 'main/img/Кадр c5761e1e55f6a52cdaa468846d6ddb90.png' %}">-->
                     <div class="content_eff-details fadeIn-top">
                         <h5>Бухгалтерское обслуживание</h5>
                         <p>Подготовим платёжки, счета,
@@ -415,27 +367,254 @@
         </div>
     </div>
 </section>
-<section id="about_work" style="overflow: hidden;">
-    <div class="container">
-        <div class="col-lg-12 text-center">
-            <p><br></p>
-            <div class="phone_zg">Как мы работаем</div>
-            <p></p>
-            <img class="img-fluid col-12" style="max-width: 80%;" src="{% static 'main/img/img.png' %}">
-            <div class="col-12" style="padding-right: 5%; padding-left: 5%;">
-                <div class="row">
-                    <div class="col-3 text-center phone_wb"><p style="font-family: Rubik-ext">Оставьте <a href="" style="color: #e50e3a; text-decoration: none;">заявку</a></p></div>
-                    <div class="col-1"></div>
-                    <div class="col-4 text-center phone_wb"><p style="font-family: Rubik-ext">Мы позвоним.</p>
-                        <p style="font-family: Rubik_rg">Наш специалист свяжиться с вами и обсудит все вопросы.</p></div>
-                    <div class="col-1"></div>
-                    <div class="col-3 text-center phone_wb"><p style="font-family: Rubik-ext">Выполняем работу.</p>
-                        <p style="font-family: Rubik_rg">Указываем перечень работ, сроки, стоимость и порядок уплаты.</p></div>
+    <section id="about_work" style="overflow: hidden;">
+        <div class="container">
+            <div class="col-lg-12 text-center">
+                <p><br></p>
+                <div class="phone_zg">Как мы работаем</div>
+                <p></p>
+                <img class="img-fluid col-12" style="max-width: 80%;" src="{% static 'main/img/img.png' %}">
+                <div class="col-12" style="padding-right: 5%; padding-left: 5%;">
+                    <div class="row">
+                        <div class="col-3 text-center phone_wb"><p style="font-family: Rubik-ext">Оставьте <a href="" style="color: #e50e3a; text-decoration: none;">заявку</a></p></div>
+                        <div class="col-1"></div>
+                        <div class="col-4 text-center phone_wb"><p style="font-family: Rubik-ext">Мы позвоним</p>
+                            <p style="font-family: Rubik_rg">Наш специалист свяжется с вами и обсудит все вопросы</p></div>
+                        <div class="col-1"></div>
+                        <div class="col-3 text-center phone_wb"><p style="font-family: Rubik-ext">Выполняем работу</p>
+                            <p style="font-family: Rubik_rg">Указываем перечень работ, сроки, стоимость и порядок уплаты</p></div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+    <section id="team" style="overflow: hidden; background: #f5f5f5">
+        <div class="container">
+            <div class="text-center">
+                <p><br></p>
+                <div class="phone_zg" style="background: #f5f5f5">Наши сотрудники</div>
+                <p></p>
+                <div class="content_flip">
+                    <a class="card" href="#!">
+                        <div class="front">
+                            <img src="{% static 'main/img/Кадр c5761e1e55f6a52cdaa468846d6ddb90.png' %}">
+                        </div>
+                        <div class="back">
+                            <div>
+                                <h1>qwe</h1>
+                                <p>Consectetur adipisicing elit. Possimus, praesentium?</p>
+                                <p>Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="card" href="#!">
+                        <div class="front">
+                            <img src="{% static 'main/img/Кадр c5761e1e55f6a52cdaa468846d6ddb90.png' %}">
+                        </div>
+                        <div class="back">
+                            <div>
+                                <h1>qwe</h1>
+                                <p>Consectetur adipisicing elit. Possimus, praesentium?</p>
+                                <p>Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="card" href="#!">
+                        <div class="front">
+                            <img src="{% static 'main/img/Кадр c5761e1e55f6a52cdaa468846d6ddb90.png' %}">
+                        </div>
+                        <div class="back">
+                            <div>
+                                <h1>qwe</h1>
+                                <p>Consectetur adipisicing elit. Possimus, praesentium?</p>
+                                <p>Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="card" href="#!">
+                        <div class="front">
+                            <img src="{% static 'main/img/Кадр c5761e1e55f6a52cdaa468846d6ddb90.png' %}">
+                        </div>
+                        <div class="back">
+                            <div>
+                                <h1>qwe</h1>
+                                <p>Consectetur adipisicing elit. Possimus, praesentium?</p>
+                                <p>Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="card" href="#!">
+                        <div class="front">
+                            <img src="{% static 'main/img/Кадр c5761e1e55f6a52cdaa468846d6ddb90.png' %}">
+                        </div>
+                        <div class="back">
+                            <div>
+                                <h1>qwe</h1>
+                                <p>Consectetur adipisicing elit. Possimus, praesentium?</p>
+                                <p>Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="card" href="#!">
+                        <div class="front">
+                            <img src="{% static 'main/img/Кадр c5761e1e55f6a52cdaa468846d6ddb90.png' %}">
+                        </div>
+                        <div class="back">
+                            <div>
+                                <h1>qwe</h1>
+                                <p>Consectetur adipisicing elit. Possimus, praesentium?</p>
+                                <p>Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="card" href="#!">
+                        <div class="front">
+                            <img src="{% static 'main/img/Кадр c5761e1e55f6a52cdaa468846d6ddb90.png' %}">
+                        </div>
+                        <div class="back">
+                            <div>
+                                <h1>qwe</h1>
+                                <p>Consectetur adipisicing elit. Possimus, praesentium?</p>
+                                <p>Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="testimonials" style="overflow: hidden; margin-left: 8%; margin-right: 8%;">
+        <div class="container">
+            <div class="phone_zg text-center" style="padding-bottom: 2%">Наши клиенты</div>
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="owl-carousel testimonials-carousel wow">
+                            <div class="testimonial-item">
+                                <div class="row">
+                                    <div class="col-md-12 col-lg-4" style="margin-top: 14px;">
+                                        <img src="{% static 'main/img/Кадр 341572f091af2883c8168316fde77a62.png' %}" class="testimonial-img img-fluid" style="padding-left: 10%;padding-right: 10%;margin-left: auto;margin-right: auto;margin-bottom: 2.5%;" alt="">
+                                    </div>
+                                    <div class="col-md-12 col-lg-8" style="padding-left: 5%; padding-right: 5%; margin-top: auto;margin-bottom: auto;">
+
+                                        <div class="phone_zg text-center" style="margin-bottom: 1%;">Юрист-Консалт</div>
+                                        <div class="phone_wb" style="margin-left: 6px; text-align: left">
+                                            Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                                            Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-item">
+                                <div class="row">
+                                    <div class="col-md-12 col-lg-4" style="margin-top: 14px;">
+                                        <img src="{% static 'main/img/Кадр 341572f091af2883c8168316fde77a62.png' %}" class="testimonial-img img-fluid" style="padding-left: 10%;padding-right: 10%;margin-left: auto;margin-right: auto;margin-bottom: 2.5%;" alt="">
+                                    </div>
+                                    <div class="col-md-12 col-lg-8" style="padding-left: 5%; padding-right: 5%; margin-top: auto;margin-bottom: auto;">
+
+                                        <div class="phone_zg text-center" style="margin-bottom: 1%;">Юрист-Консалт</div>
+                                        <div class="phone_wb" style="margin-left: 6px; text-align: left">
+                                            Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                                            Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-item">
+                                <div class="row">
+                                    <div class="col-md-12 col-lg-4" style="margin-top: 14px;">
+                                        <img src="{% static 'main/img/Кадр 341572f091af2883c8168316fde77a62.png' %}" class="testimonial-img img-fluid" style="padding-left: 10%;padding-right: 10%;margin-left: auto;margin-right: auto;margin-bottom: 2.5%;" alt="">
+                                    </div>
+                                    <div class="col-md-12 col-lg-8" style="padding-left: 5%; padding-right: 5%; margin-top: auto;margin-bottom: auto;">
+
+                                        <div class="phone_zg text-center" style="margin-bottom: 1%;">Юрист-Консалт</div>
+                                        <div class="phone_wb" style="margin-left: 6px; text-align: left">
+                                            Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                                            Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- #testimonials -->
+    <section style="overflow: hidden; background: #f5f5f5">
+        <div class="row" style="margin-bottom: 1%;">
+            <div class="col-md-6 col-sm-12">
+                <img class="img-fluid" style="max-height: 535px" src="{% static 'main/img/фотография.png' %}">
+            </div>
+            <div class="col-md-6 col-sm-12" style="margin-top: 2.7%;">
+                <form style="margin-left: 3.5%; margin-right: 3.5%;">
+                    <h1 class="phone_zg text-center" style="margin-top: 0px; background: #f5f5f5"><span style="color: #e50e3a">Оставьте заявку</span></h1>
+                    <h1 class="phone_wb text-center" style="margin-top: 0px; background: #f5f5f5">Оставьте контакты и мы вам перезвоним </h1>
+                    <div class="form-group">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" style="margin-bottom: 5%; height: 64%;" rows="1" placeholder="Имя"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="exampleFormControlTextarea2" style="margin-bottom: 5%; height: 64%;" rows="1" placeholder="Телефон"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="exampleFormControlTextarea3" style="margin-bottom: 5%; height: 114%;" rows="2" placeholder="Комментарий"></textarea>
+                    </div>
+                    <div class="d-grid gap-2 d-flex justify-content-end">
+                        <button type="submit" style="width: 33.5%; max-width: 270px" class="btn hvr-hollow btn-lg ">Оставить заявку</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section style="overflow: hidden;">
+        <div class="patern container">
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-md-1 col-sm-0"></div>
+                <div class="col-md-6 col-sm-12" style="background-color: white;margin-top: 0px;padding-top: 20px;padding-left: 40px;padding-right: 40px;padding-bottom: 30px;">
+                    <div class="row">
+                        <div class="col-6" style="font-family: Regular; font-size: 25pt; line-height: 85%">Контактная <br> информация</div>
+                        <div class="col-6 text-right">
+                            <img src="{% static 'main/img/логотип рус-01 (5).png' %}">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row" style="background-color: #f1f1f1;padding-bottom: 5px;">
+                        <div class="col-6" style="margin-bottom: 15px;">Телефон:
+                            <br>8 (4862) 75-17-27
+                            <br>+7 (910) 748-02-34
+                        </div>
+
+                        <div class="col-6" style="margin-bottom: 15px;">Адрес:
+                            <br>Орёл, ул. 2-ая Посадская,  д. 4, офис 100
+                        </div>
+                        <div class="col-6">Электронный адрес:
+                        <br>b2b-as@yandex.ru
+                        </div>
+                        <div class="col-6">Соц. сети:
+                        <br>
+                            <a href="https://telegram.me/+79107480234"><img src="{% static 'main/img/2022-09-16_15-43-40.png' %}"></a>
+                            <a href=""><img src="{% static 'main/img/2022-09-16_15-45-42.png' %}"></a>
+                            <a href="https://wa.me/+79107480234"><img src="{% static 'main/img/2022-09-16_15-49-11.png' %}"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-sm-0"></div>
+            </div>
+            <br>
+            <br>
+        </div>
+        <div class="container">
+            <div class="row" style="background-color: #dedede">
+                <div class="col-6 text-center" style="font-size: 8pt">
+                    © 2022. Все права защищены. ООО Бизнес Ассистент
+                    <br> ИНН/КПП 5753030469/575201001
+                </div>
+                <div class="col-6 text-center" style="font-size: 8pt">
+                    Политика конфиденциальности
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
 <!-- JavaScript Libraries -->
 <script src="{% static 'main/lib/jquery/jquery.min.js' %}"></script>
@@ -443,6 +622,7 @@
 <script src="{% static 'main/lib/wow/wow.min.js' %}"></script>
 <script src="{% static 'main/lib/waypoints/waypoints.min.js' %}"></script>
 <script src="{% static 'main/lib/counterup/counterup.min.js' %}"></script>
+<script src="{% static 'main/lib/owlcarousel/owl.carousel.min.js' %}"></script>
 <!-- Template Main Javascript File -->
 <script src="{% static 'main/js/main.js' %}"></script>
 </body>

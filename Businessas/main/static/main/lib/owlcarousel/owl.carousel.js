@@ -1233,7 +1233,7 @@
 			return 0;
 		}
 
-		return Math.min(Math.max(Math.abs(to - from), 1), 6) * Math.abs((factor || this.settings.smartSpeed));
+		return Math.min(Math.max(Math.abs(to - from), 1), 6) * Math.abs((factor || this.settings.smartSpeed)*5);
 	};
 
 	/**
