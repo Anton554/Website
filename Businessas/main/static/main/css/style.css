@@ -800,7 +800,28 @@ figure.effect-text-two:hover figcaption::before{
   }
 }
 
-.down_blok{
-  background: url(../img/image_2022-11-23_13-44-27.png) no-repeat;
-  background-size: 100% auto;
+@media (max-width: 768px) and (min-width: 430px) {
+  .down_blok{
+    background: url(../img/image_2022-11-23_13-44-27.png) no-repeat;
+    background-size: 100% auto;
+  }
+}
+
+@media (max-width: 90000px) and (min-width: 900px) {
+  .down_blok{
+    background: url(../img/image_2022-11-23_13-44-27.png) no-repeat;
+    background-size: 100% auto;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .down_blok{
+    background: url(../img/image_2022-11-23_13-44-27.png) no-repeat;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 768px) {
+  .down_blok{
+    background: url(../img/image_2022-11-23_13-44-27.png) no-repeat;
+  }
 }
