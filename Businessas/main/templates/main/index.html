@@ -17,19 +17,19 @@
     <link href="{% static 'main/lib/ionicons/css/ionicons.min.css' %}" rel="stylesheet">
     <link href="{% static 'main/lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
     <link href="{% static 'main/lib/lightbox/css/lightbox.min.css' %}" rel="stylesheet">
-    <link rel="stylesheet" href="https://bootstraptema.ru/snippets/effect/2016/ihe/effects.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!--    <link rel="stylesheet" href="https://bootstraptema.ru/snippets/effect/2016/ihe/effects.css">-->
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    </body>
-
 
     <!-- Main Stylesheet File -->
     <link href="{% static 'main/css/style.css' %}" rel="stylesheet">
+
     <meta name="format-detection" content="telephone=no">
 </head>
 <body>
+<section id="headers"></section>
 <div class="osnova">
     <script>
         var TxtType = function(el, toRotate, period) {
@@ -89,14 +89,14 @@
             document.body.appendChild(css);
         };
     </script>
-    <section id="headers"></section>
     <header id="header">
-
         <div class = "container" style="max-width: 1350px; margin:0 auto;">
             <div class = "row">
                 <div class="col-12">
-
-                    <div class="logo float-left">
+                    <div class="my_href_b logo float-left">
+                        <a href="#headers" class="scrollto img-fluid"><img style="margin-top: auto; margin-bottom: auto;" src="{% static 'main/img/logo.png' %}"></a>
+                    </div>
+                    <div class="my_href_s logo float-right">
                         <a href="#headers" class="scrollto img-fluid"><img style="margin-top: auto; margin-bottom: auto;" src="{% static 'main/img/logo.png' %}"></a>
                     </div>
 
@@ -106,7 +106,8 @@
                             <li><a href="#services">Услуги</a></li>
                             <li><a href="#team">Сотрудники</a></li>
                             <li><a href="#testimonials">Клиенты</a></li>
-                            <li><a href="tel:8 (910) 748-02-345" style="padding-left: 100px;">8 (910) 748-02-345</a></li>
+                            <li><div class="my_href_b"><a href="tel:8 (910) 748-02-345" style="padding-left: 100px;">8 (910) 748-02-345</a></div></li>
+                            <li><div class="my_href_s"><a href="tel:8 (910) 748-02-345">8 (910) 748-02-345</a></div></li>
                         </ul>
                     </nav>
                 </div>
@@ -135,7 +136,6 @@
         <div class = "row" style="max-width: 100%; overflow: hidden">
             <div class="" style="margin-left: 15px;">
                 <div class="fon">
-
                     <div class="container d-flex align-items-center justify-content-center" style="margin-top: 90px;">
                         <dev class="phone_zg">О компании</dev>
                         <br><br><br><br>
@@ -177,111 +177,113 @@
         <p><br></p>
     </div>
 </section>
-    <section id="services" style="background: #f5f5f5">
-    <div class="container" style='max-width: 1350px; margin:0 auto; overflow: hidden; margin-left: 15%; margin-right: 15%;'>
+    <div style="background: #f5f5f5">
+        <section id="services" style="background: #f5f5f5;max-width: 1350px;margin-left: auto;margin-right: auto;">
+        <div class="container" style='overflow: hidden; margin-left: 15%; margin-right: 15%;'>
 
-        <div class="row">
-            <br>
-            <div class="col-lg-12 text-center">
-                <p><br></p>
+            <div class="row">
+                <br>
+                <div class="col-lg-12 text-center">
+                    <p><br></p>
 
-                <h1 class="phone_zg" style="margin-top: 0px; background: #f5f5f5">Услуги</h1>
+                    <h1 class="phone_zg" style="margin-top: 0px; background: #f5f5f5">Услуги</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 col-xs-12 hover-text-one">
+                    <figure class="effect-text-two">
+                        <img class="img-fluid" src="{% static 'main/img/1. Бухгалтерское обсуживание.jpg' %}" alt=""/>
+                        <figcaption>
+                            <h3>Бухгалтерское обслуживание</h3>
+                            <p>Подготовим платёжки, счета, накладные. Проведем сверки. Сдадим отчеты. Правильно трудоустроим сотрудников, начислим зарплату, оформим отпуск и больничный. Быстро разблокируем счет <br><span style="margin-top: 6px; margin-bottom: 6px; font-weight: bold">От 5 000 рублей</span> <br> <a style="margin-top: 7px;" href="" class="btn hvr-hollow btn-lg">оставить заявку</a></p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-xs-12 hover-text-one">
+                    <figure class="effect-text-two">
+                        <img class="img-fluid" src="{% static 'main/img/2. Сопровождение работ с маркетплейсами.jpg' %}" alt=""/>
+                        <figcaption>
+                            <h3>Сопровождение работы с маркетплейсами</h3>
+                            <p>Автоматизация учета, налоги, экспертный аудит правильности расчетов за проданный товар с учетом удержаний и бонусов<br><span style="margin-top: 6px; margin-bottom: 6px; font-weight: bold">От 10 000 рублей</span> <br> <a style="margin-top: 7px;" href="" class="btn hvr-hollow btn-lg">оставить заявку</a></p>
+                            <!--                  <p><a href="" class="btn hvr-hollow btn-lg">оставить заявку</a></p>-->
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-xs-12 hover-text-one">
+                    <figure class="effect-text-two">
+                        <img class="img-fluid" src="{% static 'main/img/3. Оптимизация работы с онлайн-кассами, эквайрингом.jpg' %}" alt=""/>
+                        <figcaption>
+                            <h3>Оптимизация работы с онлайн-кассами, эквайрингом </h3>
+                            <p>Чеки коррекции, ОФД. Постановка/снятие кассы на учет в налоговой. Отражение поступлений эквайринга в учете<br><span style="margin-top: 6px; margin-bottom: 6px; font-weight: bold">От 1 000 рублей</span> <br> <a style="margin-top: 7px;" href="" class="btn hvr-hollow btn-lg">оставить заявку</a></p>
+                            <!--                  <p><a href="" class="btn hvr-hollow btn-lg">оставить заявку</a></p>-->
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-xs-12 hover-text-one">
+                    <figure class="effect-text-two">
+                        <img class="img-fluid" src="{% static 'main/img/4. Подбор и внедрение облачныхрешений для приема денег онлайн.jpg' %}" alt=""/>
+                        <figcaption>
+                            <h3>Подбор и внедрение облачных решений для приема денег онлайн </h3>
+                            <p>Прием денег через интернет на сайт, по ссылкам, через СБП, через платежных агрегаторов ЮКаssa, Продамус, Робокасса и др. Или оплата на месте по QR-коду<br><span style="margin-top: 6px; margin-bottom: 6px; font-weight: bold">От 3 000 рублей</span> <br> <a style="margin-top: 7px;" href="" class="btn hvr-hollow btn-lg">оставить заявку</a></p>
+                            <!--                  <p><a href="" class="btn hvr-hollow btn-lg">оставить заявку</a></p>-->
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-xs-12 hover-text-one">
+                    <figure class="effect-text-two">
+                        <img class="img-fluid" src="{% static 'main/img/5.  Маркировка, лицензирование, прослеживаемые товары, ФГИС, ЭДО.jpg' %}" alt=""/>
+                        <figcaption>
+                            <h3>Маркировка, лицензирование, прослеживаемые товары, ФГИС, ЭДО</h3>
+                            <p>Работа в системе “Честный знак”, проведение маркировки, занесение данных по товарам, получение электронной подписи. Настроим ЭДО, внесем данные в ФГИС<br><span style="margin-top: 6px; margin-bottom: 6px; font-weight: bold">От 3 000 рублей</span> <br> <a style="margin-top: 7px;" href="" class="btn hvr-hollow btn-lg">оставить заявку</a></p>
+                            <!--                  <p><a href="" class="btn hvr-hollow btn-lg">оставить заявку</a></p>-->
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-xs-12 hover-text-one">
+                    <figure class="effect-text-two">
+                        <img class="img-fluid" src="{% static 'main/img/6. Налоговые вопросы.jpg' %}" alt=""/>
+                        <figcaption>
+                            <h3>Налоговые <br> вопросы</h3>
+                            <p>Возьмем на себя общение с налоговой, ответим на требования, разберемся с недоимкой. Получим патент. Правильно заполним и сдадим декларацию<br><span style="margin-top: 6px; margin-bottom: 6px; font-weight: bold">От 4 000 рублей</span> <br> <a style="margin-top: 7px;" href="" class="btn hvr-hollow btn-lg">оставить заявку</a></p>
+                            <!--                  <p><a href="" class="btn hvr-hollow btn-lg">оставить заявку</a></p>-->
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-xs-12 hover-text-one">
+                    <figure class="effect-text-two">
+                        <img class="img-fluid" src="{% static 'main/img/7. Регистрация, ликвидация бизнеса.jpg' %}" alt=""/>
+                        <figcaption>
+                            <h3>Регистрация/ ликвидация бизнеса</h3>
+                            <p>Проведем онлайн регистрацию/ликвидацию/изменения ООО, ИП. Удаленно подадим уведомления в Вестник и Федресурс. Сдадим ликвидационную отчетность<br><span style="margin-top: 6px; margin-bottom: 6px; font-weight: bold">От 8 000 рублей</span><br> <a style="margin-top: 7px;" href="" class="btn hvr-hollow btn-lg">оставить заявку</a> </p>
+                            <!--                  <p><a href="" class="btn hvr-hollow btn-lg">оставить заявку</a></p>-->
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-xs-12 hover-text-one">
+                    <figure class="effect-text-two">
+                        <img class="img-fluid" src="{% static 'main/img/8. Корпоративные юриддические задачи.jpg' %}" alt=""/>
+                        <figcaption>
+                            <h3>Корпоративные юридические задачи</h3>
+                            <p>Составим договоры, понятно объясним юридические тонкости, проконсультируем, поможем в составлении претензий и урегулировании споров<br><span style="margin-top: 6px; margin-bottom: 6px; font-weight: bold">От 5 000 рублей</span><br> <a style="margin-top: 7px;" href="" class="btn hvr-hollow btn-lg">оставить заявку</a></p>
+                            <!--                  <p><a href="" class="btn hvr-hollow btn-lg">оставить заявку</a></p>-->
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-sm-3 my_center"></div>
+                <div class="col-lg-4 col-sm-6 col-xs-12 hover-text-one">
+                    <figure class="effect-text-two">
+                        <img class="img-fluid" src="{% static 'main/img/9. Персональная помощь бизнес-ассистента под ваш запрос.jpg' %}" alt=""/>
+                        <figcaption>
+                            <h3>Персональная помощь бизнес-ассистента под ваш запрос</h3>
+                            <p>Возможно ваш бизнес уникален и требует персонального подхода в решении нестандартных задач. Расскажите нам о них. Мы подберем оптимальные варианты<br> <a style="margin-top: 7px;" href="" class="btn hvr-hollow btn-lg">оставить заявку</a></p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-sm-3 my_center"></div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-4 col-sm-6 col-xs-12 hover-text-one">
-                <figure class="effect-text-two">
-                    <img class="img-fluid" src="{% static 'main/img/1. Бухгалтерское обсуживание.jpg' %}" alt=""/>
-                    <figcaption>
-                        <h3>Бухгалтерское обслуживание</h3>
-                        <p>Подготовим платёжки, счета, накладные. Проведем сверки. Сдадим отчеты. Правильно трудоустроим сотрудников, начислим зарплату, оформим отпуск и больничный. Быстро разблокируем счет <br> <a style="margin-top: 7px;" href="" class="btn hvr-hollow btn-lg">оставить заявку</a></p>
-                    </figcaption>
-                </figure>
-            </div>
-            <div class="col-lg-4 col-sm-6 col-xs-12 hover-text-one">
-                <figure class="effect-text-two">
-                    <img class="img-fluid" src="{% static 'main/img/2. Сопровождение работ с маркетплейсами.jpg' %}" alt=""/>
-                    <figcaption>
-                        <h3>Сопровождение работы с маркетплейсами</h3>
-                        <p>Автоматизация учета, налоги, экспертный аудит правильности расчетов за проданный товар с учетом удержаний и бонусов <br> <a style="margin-top: 7px;" href="" class="btn hvr-hollow btn-lg">оставить заявку</a></p>
-                        <!--                  <p><a href="" class="btn hvr-hollow btn-lg">оставить заявку</a></p>-->
-                    </figcaption>
-                </figure>
-            </div>
-            <div class="col-lg-4 col-sm-6 col-xs-12 hover-text-one">
-                <figure class="effect-text-two">
-                    <img class="img-fluid" src="{% static 'main/img/3. Оптимизация работы с онлайн-кассами, эквайрингом.jpg' %}" alt=""/>
-                    <figcaption>
-                        <h3>Оптимизация работы с онлайн-кассами, эквайрингом </h3>
-                        <p>Чеки коррекции, ОФД. Постановка/снятие кассы на учет в налоговой. Отражение поступлений эквайринга в учете <br> <a style="margin-top: 7px;" href="" class="btn hvr-hollow btn-lg">оставить заявку</a></p>
-                        <!--                  <p><a href="" class="btn hvr-hollow btn-lg">оставить заявку</a></p>-->
-                    </figcaption>
-                </figure>
-            </div>
-            <div class="col-lg-4 col-sm-6 col-xs-12 hover-text-one">
-                <figure class="effect-text-two">
-                    <img class="img-fluid" src="{% static 'main/img/4. Подбор и внедрение облачныхрешений для приема денег онлайн.jpg' %}" alt=""/>
-                    <figcaption>
-                        <h3>Подбор и внедрение облачных решений для приема денег онлайн </h3>
-                        <p>Прием денег через интернет на сайт, по ссылкам, через СБП, через платежных агрегаторов ЮКаssa, Продамус, Робокасса и др. Или оплата на месте по QR-коду <br> <a style="margin-top: 7px;" href="" class="btn hvr-hollow btn-lg">оставить заявку</a></p>
-                        <!--                  <p><a href="" class="btn hvr-hollow btn-lg">оставить заявку</a></p>-->
-                    </figcaption>
-                </figure>
-            </div>
-            <div class="col-lg-4 col-sm-6 col-xs-12 hover-text-one">
-                <figure class="effect-text-two">
-                    <img class="img-fluid" src="{% static 'main/img/5.  Маркировка, лицензирование, прослеживаемые товары, ФГИС, ЭДО.jpg' %}" alt=""/>
-                    <figcaption>
-                        <h3>Маркировка, лицензирование, прослеживаемые товары, ФГИС, ЭДО</h3>
-                        <p>Работа в системе “Честный знак”, проведение маркировки, занесение данных по товарам, получение электронной подписи. Настроим ЭДО, внесем данные в ФГИС <br> <a style="margin-top: 7px;" href="" class="btn hvr-hollow btn-lg">оставить заявку</a></p>
-                        <!--                  <p><a href="" class="btn hvr-hollow btn-lg">оставить заявку</a></p>-->
-                    </figcaption>
-                </figure>
-            </div>
-            <div class="col-lg-4 col-sm-6 col-xs-12 hover-text-one">
-                <figure class="effect-text-two">
-                    <img class="img-fluid" src="{% static 'main/img/6. Налоговые вопросы.jpg' %}" alt=""/>
-                    <figcaption>
-                        <h3>Налоговые <br> вопросы</h3>
-                        <p>Возьмем на себя общение с налоговой, ответим на требования, разберемся с недоимкой. Получим патент. Правильно заполним и сдадим декларацию <br> <a style="margin-top: 7px;" href="" class="btn hvr-hollow btn-lg">оставить заявку</a></p>
-                        <!--                  <p><a href="" class="btn hvr-hollow btn-lg">оставить заявку</a></p>-->
-                    </figcaption>
-                </figure>
-            </div>
-            <div class="col-lg-4 col-sm-6 col-xs-12 hover-text-one">
-                <figure class="effect-text-two">
-                    <img class="img-fluid" src="{% static 'main/img/7. Регистрация, ликвидация бизнеса.jpg' %}" alt=""/>
-                    <figcaption>
-                        <h3>Регистрация/ ликвидация бизнеса</h3>
-                        <p>Проведем онлайн регистрацию/ликвидацию/изменения ООО, ИП. Удаленно подадим уведомления в Вестник и Федресурс. Сдадим ликвидационную отчетность<br> <a style="margin-top: 7px;" href="" class="btn hvr-hollow btn-lg">оставить заявку</a> </p>
-                        <!--                  <p><a href="" class="btn hvr-hollow btn-lg">оставить заявку</a></p>-->
-                    </figcaption>
-                </figure>
-            </div>
-            <div class="col-lg-4 col-sm-6 col-xs-12 hover-text-one">
-                <figure class="effect-text-two">
-                    <img class="img-fluid" src="{% static 'main/img/8. Корпоративные юриддические задачи.jpg' %}" alt=""/>
-                    <figcaption>
-                        <h3>Корпоративные юридические задачи</h3>
-                        <p>Составим договоры, понятно объясним юридические тонкости, проконсультируем, поможем в составлении претензий и урегулировании споров<br> <a style="margin-top: 7px;" href="" class="btn hvr-hollow btn-lg">оставить заявку</a></p>
-                        <!--                  <p><a href="" class="btn hvr-hollow btn-lg">оставить заявку</a></p>-->
-                    </figcaption>
-                </figure>
-            </div>
-            <div class="col-sm-3 my_center"></div>
-            <div class="col-lg-4 col-sm-6 col-xs-12 hover-text-one">
-                <figure class="effect-text-two">
-                    <img class="img-fluid" src="{% static 'main/img/9. Персональная помощь бизнес-ассистента под ваш запрос.jpg' %}" alt=""/>
-                    <figcaption>
-                        <h3>Персональная помощь бизнес-ассистента под ваш запрос</h3>
-                        <p>Возможно ваш бизнес уникален и требует персонального подхода в решении нестандартных задач. Расскажите нам о них. Мы подберем оптимальные варианты <br> <a style="margin-top: 7px;" href="" class="btn hvr-hollow btn-lg">оставить заявку</a></p>
-                    </figcaption>
-                </figure>
-            </div>
-            <div class="col-sm-3 my_center"></div>
-        </div>
+    </section>
     </div>
-</section>
     <section id="about_work" style="max-width: 1350px; margin:0 auto; overflow: hidden;">
         <div class="container my_cont_1">
             <div class="col-lg-12 text-center">
@@ -481,6 +483,36 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="testimonial-item">
+                                <div class="row">
+                                    <div class="col-md-12 col-lg-4" style="margin-top: 14px;">
+                                        <img src="{% static 'main/img/Кадр 341572f091af2883c8168316fde77a62.png' %}" class="testimonial-img img-fluid" style="padding-left: 10%;padding-right: 10%;margin-left: auto;margin-right: auto;margin-bottom: 2.5%;" alt="">
+                                    </div>
+                                    <div class="col-md-12 col-lg-8" style="padding-left: 5%; padding-right: 5%; margin-top: auto;margin-bottom: auto;">
+
+                                        <div class="phone_zg text-center" style="margin-bottom: 1%;">Юрист-Консалт</div>
+                                        <div class="phone_wb" style="margin-left: 6px; text-align: left">
+                                            Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                                            Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-item">
+                                <div class="row">
+                                    <div class="col-md-12 col-lg-4" style="margin-top: 14px;">
+                                        <img src="{% static 'main/img/Кадр 341572f091af2883c8168316fde77a62.png' %}" class="testimonial-img img-fluid" style="padding-left: 10%;padding-right: 10%;margin-left: auto;margin-right: auto;margin-bottom: 2.5%;" alt="">
+                                    </div>
+                                    <div class="col-md-12 col-lg-8" style="padding-left: 5%; padding-right: 5%; margin-top: auto;margin-bottom: auto;">
+
+                                        <div class="phone_zg text-center" style="margin-bottom: 1%;">Юрист-Консалт</div>
+                                        <div class="phone_wb" style="margin-left: 6px; text-align: left">
+                                            Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                                            Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                     </div>
                 </div>
             </div>
@@ -519,15 +551,15 @@
             <br>
             <div class="row">
                 <div class="col-xl-1 col-md-1 col-sm-0"></div>
-                <div class="col-xl-6 col-md-6 col-sm-12" style="background-color: white;margin-top: 0px;padding-top: 20px;padding-left: 40px;padding-right: 40px;padding-bottom: 30px;max-width: 650px;margin-left: auto;margin-right: auto;">
+                <div class="col-xl-6 col-md-6 col-sm-12 down_blok" style="margin-top: 0px;padding-top: 20px;padding-left: 40px;padding-right: 40px;padding-bottom: 30px;max-width: 650px;margin-left: auto;margin-right: auto;">
                     <div class="row">
-                        <div class="col-6" style="font-family: Regular; font-size: 25pt; line-height: 85%">Контактная <br> информация</div>
+                        <div class="col-6" style="font-family: Regular;font-size: 25pt;line-height: 85%;padding-left: 0px;">Контактная <br> информация</div>
                         <div class="col-6 text-right">
                             <img src="{% static 'main/img/логотип рус-01 (5).png' %}">
                         </div>
                     </div>
                     <br>
-                    <div class="row" style="background-color: #f1f1f1;padding-bottom: 5px;">
+                    <div class="row" style="background-color: #f1f1f1;padding-bottom: 5px;padding-left: 5px;padding-top: 5px;border-radius: 10px;">
                         <div class="col-6" style="margin-bottom: 15px;">Телефон:
                             <br><a href="tel:8 (4862) 75-17-27">8 (4862) 75-17-27</a>
                             <br><a href="tel:+7 (910) 748-02-34">+7 (910) 748-02-34</a>
@@ -554,8 +586,7 @@
                 </div>
                 <div class="col-xl-5 col-md-5 col-sm-0"></div>
             </div>
-            <br>
-            <br>
+            <br><br>
         </div>
         <div class="container">
             <div class="row" style="background-color: #dedede">
@@ -564,7 +595,7 @@
                     <br>ООО Бизнес Ассистент ИНН/КПП 5753030469/575201001
                 </div>
                 <div class="col-6 text-center align-middle" style="font-size: 10pt;margin-top: 0.5%;margin-bottom: 0.5%;padding-top: 10px;">
-                    <a href="{% static 'main/img/Политика конфидициальности.pdf' %}">Политика конфиденциальности</a>
+                    <a href="{% static 'main/img/Политика конфидициальности.pdf' %}" target="_blank">Политика конфиденциальности</a>
                 </div>
             </div>
         </div>
@@ -577,6 +608,8 @@
 <script src="{% static 'main/lib/waypoints/waypoints.min.js' %}"></script>
 <script src="{% static 'main/lib/counterup/counterup.min.js' %}"></script>
 <script src="{% static 'main/lib/owlcarousel/owl.carousel.min.js' %}"></script>
+<script src="{% static 'main/lib/mobile-nav/mobile-nav.js' %}"></script>
+
 <!-- Template Main Javascript File -->
 <script src="{% static 'main/js/main.js' %}"></script>
 </body>

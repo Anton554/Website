@@ -130,7 +130,7 @@ h1{
 #header .logo img {
   padding: 0;
   max-height: 47px;
-  margin: 18px 0 7px 52px;
+  margin: 18px 20px 7px 50px
 }
 
 .main-pages {
@@ -244,6 +244,132 @@ h1{
   content: "\f105";
   position: absolute;
   right: 15px;
+}
+
+/* Mobile Navigation */
+
+.mobile-nav {
+  position: fixed;
+  top: 70px;
+  bottom: 0;
+  z-index: 9999;
+  overflow-y: auto;
+  left: -260px;
+  width: 210px;
+  padding-top: 0px;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0px 20px 30px rgb(127 137 161 / 30%);
+  transition: 0.4s;
+}
+
+.mobile-nav * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mobile-nav a {
+  font-family: "Rubik_rg";
+  display: block;
+  position: relative;
+  color: #000000;
+  padding: 10px 20px;
+  font-size: 110%;
+  font-weight: 500;
+}
+
+.mobile-nav a:hover,
+.mobile-nav .active > a,
+.mobile-nav li:hover > a {
+  color: #e51739;
+  text-decoration: none;
+}
+
+.mobile-nav .drop-down > a:after {
+  content: "\f078";
+  /*font-family: FontAwesome;*/
+  padding-left: 10px;
+  position: absolute;
+  right: 15px;
+}
+
+.mobile-nav .active.drop-down > a:after {
+  content: "\f077";
+}
+
+.mobile-nav .drop-down > a {
+  padding-right: 35px;
+}
+
+.mobile-nav .drop-down ul {
+  display: none;
+  overflow: hidden;
+}
+
+.mobile-nav .drop-down li {
+  padding-left: 20px;
+}
+
+.mobile-nav-toggle {
+  position: fixed;
+  /*right: 0;*/
+  top: 0;
+  margin-left: 15px;
+  margin-top: 5px;
+  z-index: 9998;
+  border: 0;
+  background: none;
+  font-size: 24px;
+  transition: all 0.4s;
+  outline: none !important;
+  line-height: 1;
+  cursor: pointer;
+  text-align: right;
+}
+
+.mobile-nav-toggle i {
+  margin: 18px 18px 0 0;
+  color: #e50e3a;
+}
+
+.mobile-nav-overly {
+  width: 100%;
+  height: 100%;
+  z-index: 9997;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: rgba(255, 255, 255, 0);
+  overflow: hidden;
+  display: none;
+}
+
+.mobile-nav-active {
+  overflow: hidden;
+}
+
+.mobile-nav-active .mobile-nav {
+  left: 0;
+}
+
+.mobile-nav-active .mobile-nav-toggle i {
+  color: #e50e3a;
+}
+#about .about-img {
+  position: relative;
+  margin: 30px 30px 30px 30px;
+}
+
+#about .about-img img {
+  width: 100%;
+  border: 8px solid #fff;
+  transition: .5s;
+}
+
+#about .about-img img:hover {
+  width: 100%;
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
 }
 
 /*Hover Fall Effect*/
@@ -393,7 +519,7 @@ figure.effect-text-two figcaption::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.69);
+  background: rgba(0, 0, 0, 0.49);
   content: '';
   opacity: 0;
 }
@@ -413,6 +539,10 @@ figure.effect-text-two p {
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
 }
+figure.effect-text-two img{
+  filter: brightness(60%);
+}
+
 figure.effect-text-two p {
   position: absolute;
   bottom: 0;
@@ -624,7 +754,6 @@ figure.effect-text-two:hover figcaption::before{
 }
 
 #testimonials .testimonial-item p {
-  /*font-style: italic;*/
   margin: 0 0 15px 140px;
 }
 
@@ -657,4 +786,21 @@ figure.effect-text-two:hover figcaption::before{
   .b_blok{
     display: none;
   }
+}
+
+@media (max-width: 60000px) and (min-width: 992px) {
+  .my_href_s{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .my_href_b{
+    display: none;
+  }
+}
+
+.down_blok{
+  background: url(../img/image_2022-11-23_13-44-27.png) no-repeat;
+  background-size: 100% auto;
 }

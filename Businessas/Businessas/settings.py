@@ -51,7 +51,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'Businessas.urls'
-
+SECURE_CROSS_ORIGIN_OPENER_POLICY=None
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
