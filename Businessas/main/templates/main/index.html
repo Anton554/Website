@@ -25,8 +25,20 @@
 
     <!-- Main Stylesheet File -->
     <link href="{% static 'main/css/style.css' %}" rel="stylesheet">
-
     <meta name="format-detection" content="telephone=no">
+    <script>
+            function call_request() {
+                var var_fname = $('#text_fname').val();
+                var var_phone = $('#text_phone').val();
+                var var_msg = $('#text_msg').val();
+                $.get('/main/save_request/', { fname: var_fname, phone: var_phone, msg: var_msg}, function( data )
+                {
+                    $('#text_msg').val();
+                    $('#text_msg').val(data.message);
+                }
+                );
+            }
+    </script>
 </head>
 <body>
 <section id="headers"></section>
@@ -548,16 +560,16 @@
                         <h1 class="phone_zg text-center" style="margin-top: 0px; background: #f5f5f5"><span style="color: #e50e3a">Оставьте заявку</span></h1>
                         <h1 class="phone_wb text-center" style="margin-top: 0px; background: #f5f5f5">мы вам перезвоним </h1>
                         <div class="form-group">
-                            <textarea class="form-control" id="exampleFormControlTextarea1" style="margin-bottom: 5%; height: 64%;" rows="1" placeholder="Имя"></textarea>
+                            <textarea class="form-control" id="text_fname" style="margin-bottom: 5%; height: 64%;" rows="1" placeholder="Имя"></textarea>
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control" id="exampleFormControlTextarea2" style="margin-bottom: 5%; height: 64%;" rows="1" placeholder="Телефон"></textarea>
+                            <textarea class="form-control" id="text_phone" style="margin-bottom: 5%; height: 64%;" rows="1" placeholder="Телефон"></textarea>
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control" id="exampleFormControlTextarea3" style="margin-bottom: 5%; height: 114%;" rows="2" placeholder="Комментарий"></textarea>
+                            <textarea class="form-control" id="text_msg" style="margin-bottom: 5%; height: 114%;" rows="3" placeholder="Текст заявки"></textarea>
                         </div>
                         <div class="d-grid gap-2 d-flex justify-content-end">
-                            <button type="submit" href="#!" style="width: 33.5%; max-width: 270px; border-top-width: 0; border-left-width: 0; border-bottom-width: 0; border-right-width: 0;" class="btn hvr-hollow btn-lg">Оставить заявку</button>
+                            <button onclick="call_request();" href="#!" style="width: 33.5%; max-width: 270px; border-top-width: 0; border-left-width: 0; border-bottom-width: 0; border-right-width: 0;" class="btn hvr-hollow btn-lg">Оставить заявку</button>
                         </div>
                     </form>
                 </div>
