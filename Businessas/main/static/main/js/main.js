@@ -128,6 +128,44 @@
     }
   });
 
+  $(document).ready(function(){
+    var chek = [];
+    let numOfClicks = 0;
+    $('.back').css({
+      "background": "#f5f5f5",
+      "transform": "rotateY(-180deg)",
+      "transition": "transform 0s",
+      "padding": "0 1em",
+    });
+
+    $('.card').on('click', function () {
+      ++numOfClicks;
+      if($.inArray(this.id, chek ) === -1){
+        chek.push(this.id)
+        $(this).find(".front").css({
+          "transform": "rotateY(180deg)",
+          "transition": "transform 0.8s",
+        });
+
+        $(this).find(".back").css({
+            "transform": "rotateY(-0deg)",
+            "transition": "transform 0.8s",
+        });
+      }
+      else{
+        $(this).find(".front").css({
+          "transform": "rotateY(0deg)",
+        });
+
+        $(this).find(".back").css({
+          "transform": "rotateY(-180deg)",
+        });
+        chek.splice( $.inArray(this.id, chek), 1 );
+      }
+    });
+  });
+
+
   $(function(){
     $("#typing").typed({
       strings: [" В Африке гориллы.", " В Африке большие.", " Злые крокодилы."],

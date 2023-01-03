@@ -1,0 +1,22 @@
+1) Создал модель(класс) в файле model
+
+Миграция данных
+------------------
+2) python manage.py makemigrations main
+3) python manage.py migrate
+
+Создание админки
+------------------
+1) Создание супер пользователя
+python manage.py createsuperuser
+
+
+var var_fname = $('#text_fname').val();
+                var var_phone = $('#text_phone').val();
+                var var_msg = $('#text_msg').val();
+                $.post('/main/save_request/', { fname: var_fname, phone: var_phone, msg: var_msg}, function( data )
+                {
+                    $('#text_msg').val();
+                    $('#text_msg').val(data.message);
+                }
+                );
