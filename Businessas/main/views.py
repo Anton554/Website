@@ -18,7 +18,10 @@ def save_request(request):
     fname = request.GET.get('fname')
     phone = request.GET.get('phone')
     msg = request.GET.get('msg')
-    send_ms(subject="Новая заявка", text=f"{fname}\n{phone}\n{msg}")
+    if msg == "Необходимо перезвонить":
+        send_ms(subject="Необходимо перезвонить", text=f"{fname}\n{phone}")
+    else:
+        send_ms(subject="Новая заявка", text=f"{fname}\n{phone}\n{msg}")
     print(f'{req=}')
     # Передача данных через HttpResponse в json
     data = {"header": "Hello Django"}
@@ -40,4 +43,5 @@ def send_ms(subject, text):
     mime = MIMEText(text, 'plain', 'utf-8')
     mime['Subject'] = Header(subject, 'utf-8')
 
-    server.sendmail(login, 'milk554@yandex.ru', mime.as_string())
+    server.sendmail(login, 'b2b-as@yandex.ru', mime.as_string())
+#     server.sendmail(login, 'milk554@yandex.ru', mime.as_string())

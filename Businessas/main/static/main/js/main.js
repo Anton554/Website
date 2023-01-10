@@ -128,6 +128,7 @@
     }
   });
 
+
   $(document).ready(function(){
     var chek = [];
     let numOfClicks = 0;
