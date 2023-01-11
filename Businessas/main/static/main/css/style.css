@@ -818,6 +818,11 @@ figure.effect-text-two:hover figcaption::before{
   text-align: center;
 }
 
+.owl-dots{
+  margin-bottom: 5px;
+}
+
+
 #testimonials .owl-dot {
   display: inline-block;
   margin: 0 5px;
