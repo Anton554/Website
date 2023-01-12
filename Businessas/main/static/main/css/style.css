@@ -709,7 +709,7 @@ figure.effect-text-two:hover figcaption::before{
   margin: 1rem;
   position: relative;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 990px) {
   .card {
     width: calc(50% - 5rem);
   }
@@ -734,6 +734,7 @@ figure.effect-text-two:hover figcaption::before{
   backface-visibility: hidden;
   transform-style: preserve-3d;
   transition: ease-in-out 600ms;
+  background-color: #f5f5f5;
 }
 .front {
   background-size: cover;
@@ -761,6 +762,8 @@ figure.effect-text-two:hover figcaption::before{
   color: #000000;
   font-size: 90%;
   font-family: Rubik_rg;
+  border:1px solid rgba(0,0,0,.125);
+  border-radius:.25rem;
 }
 .back p{
 
