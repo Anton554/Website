@@ -18,7 +18,9 @@ def save_request(request):
     fname = request.GET.get('fname')
     phone = request.GET.get('phone')
     msg = request.GET.get('msg')
-    if msg == "Необходимо перезвонить":
+    if fname == "None" or phone == "None" or msg == "None":
+        pass
+    elif msg == "Необходимо перезвонить":
         send_ms(subject="Необходимо перезвонить", text=f"{fname}\n{phone}")
     else:
         send_ms(subject="Новая заявка", text=f"{fname}\n{phone}\n{msg}")
@@ -43,5 +45,5 @@ def send_ms(subject, text):
     mime = MIMEText(text, 'plain', 'utf-8')
     mime['Subject'] = Header(subject, 'utf-8')
 
-    server.sendmail(login, 'b2b-as@yandex.ru', mime.as_string())
-#     server.sendmail(login, 'milk554@yandex.ru', mime.as_string())
+#     server.sendmail(login, 'b2b-as@yandex.ru', mime.as_string())
+    server.sendmail(login, 'milk554@yandex.ru', mime.as_string())
