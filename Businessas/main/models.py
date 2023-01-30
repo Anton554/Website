@@ -8,7 +8,7 @@ class UsRequest(models.Model):
 
     name = models.CharField('Имя', max_length=40)
     phone = models.CharField('Номер', max_length=16)
-    msg = models.CharField('Текст заявки', max_length=250)
+    msg = models.TextField('Текст заявки', max_length=5000)
 
     def __str__(self):
         return self.name
