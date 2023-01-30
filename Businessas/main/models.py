@@ -4,6 +4,7 @@ from django.db import models
 class UsRequest(models.Model):
     class Meta:
         verbose_name_plural = "Заявки"
+        verbose_name = 'Заявка'
 
     name = models.CharField('Имя', max_length=40)
     phone = models.CharField('Номер', max_length=16)
