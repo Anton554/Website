@@ -5,11 +5,14 @@ class UsRequest(models.Model):
     class Meta:
         verbose_name_plural = "Заявки"
 
-    fname = models.CharField(max_length=40)
-    phone = models.CharField(help_text='Номер', max_length=16)
-    msg = models.CharField(help_text='Текст заявки', max_length=250)
-    datacr = models.DateTimeField(null=True)
-    datasn = models.DateTimeField(null=True)
+    name = models.CharField('Имя', max_length=40)
+    phone = models.CharField('Номер', max_length=16)
+    msg = models.CharField('Текст заявки', max_length=250)
+
+    def __str__(self):
+        return self.name
+    # datacr = models.DateTimeField(null=True)
+    # datasn = models.DateTimeField(null=True)
 
 
 class Services(models.Model):
