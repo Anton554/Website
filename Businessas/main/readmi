@@ -20,3 +20,5 @@ var var_fname = $('#text_fname').val();
                     $('#text_msg').val(data.message);
                 }
                 );
+
+pip install pillow

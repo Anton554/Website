@@ -6,11 +6,14 @@ import smtplib as smtp
 from email.header import Header
 from email.mime.text import MIMEText
 
-from .models import UsRequest
+from .models import UsRequest, Services, Staff, Feedback
 
 
 def index(request):
-    return render(request, 'main/index.html')
+    txt = Services.objects.all()
+    txt2 = Staff.objects.all()
+    txt3 = Feedback.objects.all()
+    return render(request, 'main/index.html', {'txt': txt, 'txt2': txt2, 'txt3': txt3})
 
 
 def save_request(request):
@@ -45,5 +48,5 @@ def send_ms(subject, text):
     mime = MIMEText(text, 'plain', 'utf-8')
     mime['Subject'] = Header(subject, 'utf-8')
 
-    server.sendmail(login, 'b2b-as@yandex.ru', mime.as_string())
-#     server.sendmail(login, 'milk554@yandex.ru', mime.as_string())
+    #     server.sendmail(login, 'b2b-as@yandex.ru', mime.as_string())
+    server.sendmail(login, 'milk554@yandex.ru', mime.as_string())

@@ -303,7 +303,6 @@
                     <br>
                     <div class="col-lg-12 text-center">
                         <p><br></p>
-
                         <h1 class="phone_zg" style="margin-top: 0px; background: #f5f5f5">Услуги</h1>
                     </div>
                 </div>
@@ -312,11 +311,16 @@
                         <figure class="effect-text-two">
                             <img class="img-fluid" src="{% static 'main/img/1. Бухгалтерское обсуживание.jpg' %}" alt=""/>
                             <figcaption>
-                                <h3>Бухгалтерское обслуживание</h3>
-                                <p>Подготовим платёжки, счета, накладные. Проведем сверки.<br>Сдадим отчеты.<br>Правильно трудоустроим<br>сотрудников,<br>начислим зарплату,<br>оформим отпуск и больничный. Быстро разблокируем счет
-                                    <br><span class="btn btn-primary" style="background-color: #007bff00; border-color: #007bff00; font-weight: bold; font-size: 100%">От 5 000 рублей</span>
+                                {% for el in txt %}
+                                {% if el.chapter == 'Услуга 1' %}
+                                <h3>{{el.title|linebreaksbr}}</h3>
+                                <p>
+                                    {{el.text|linebreaksbr}}
+                                    <br><span class="btn btn-primary" style="background-color: #007bff00; border-color: #007bff00; font-weight: bold; font-size: 100%">{{el.price}}</span>
                                     <br><a style="margin-top: 2px;" href="javascript:show_exampleModal_3();" class="btn hvr-hollow btn-lg">оставить заявку</a>
                                 </p>
+                                {% endif %}
+                                {% endfor %}
                             </figcaption>
                         </figure>
                     </div>
@@ -324,11 +328,16 @@
                         <figure class="effect-text-two">
                             <img class="img-fluid" src="{% static 'main/img/2. Сопровождение работ с маркетплейсами.jpg' %}" alt=""/>
                             <figcaption>
-                                <h3>Сопровождение работы<br>с маркетплейсами</h3>
-                                <p>Автоматизация учета, налоги,<br>экспертный аудит правильности<br>расчетов за проданный товар<br>с учетом удержаний и бонусов
-                                    <br><span class="btn btn-primary" style="background-color: #007bff00; border-color: #007bff00; font-weight: bold; font-size: 100%">От 10 000 рублей</span>
+                                {% for el in txt %}
+                                {% if el.chapter == 'Услуга 2' %}
+                                <h3>{{el.title|linebreaksbr}}</h3>
+                                <p>
+                                    {{el.text|linebreaksbr}}
+                                    <br><span class="btn btn-primary" style="background-color: #007bff00; border-color: #007bff00; font-weight: bold; font-size: 100%">{{el.price}}</span>
                                     <br><a style="margin-top: 2px;" href="javascript:show_exampleModal_3();" class="btn hvr-hollow btn-lg">оставить заявку</a>
                                 </p>
+                                {% endif %}
+                                {% endfor %}
                             </figcaption>
                         </figure>
                     </div>
@@ -336,11 +345,16 @@
                         <figure class="effect-text-two">
                             <img class="img-fluid" src="{% static 'main/img/3. Оптимизация работы с онлайн-кассами, эквайрингом.jpg' %}" alt=""/>
                             <figcaption>
-                                <h3>Оптимизация работы<br>с онлайн-кассами,<br>эквайрингом </h3>
-                                <p>Чеки коррекции, ОФД.<br>Постановка/снятие кассы<br>на учет в налоговой.<br>Отражение поступлений<br>эквайринга в учете
-                                    <br><span class="btn btn-primary" style="background-color: #007bff00; border-color: #007bff00; font-weight: bold; font-size: 100%">От 1 000 рублей</span>
+                                {% for el in txt %}
+                                {% if el.chapter == 'Услуга 3' %}
+                                <h3>{{el.title|linebreaksbr}}</h3>
+                                <p>
+                                    {{el.text|linebreaksbr}}
+                                    <br><span class="btn btn-primary" style="background-color: #007bff00; border-color: #007bff00; font-weight: bold; font-size: 100%">{{el.price}}</span>
                                     <br><a style="margin-top: 2px;" href="javascript:show_exampleModal_3();" class="btn hvr-hollow btn-lg">оставить заявку</a>
                                 </p>
+                                {% endif %}
+                                {% endfor %}
                             </figcaption>
                         </figure>
                     </div>
@@ -348,11 +362,16 @@
                         <figure class="effect-text-two">
                             <img class="img-fluid" src="{% static 'main/img/4. Подбор и внедрение облачныхрешений для приема денег онлайн.jpg' %}" alt=""/>
                             <figcaption>
-                                <h3>Подбор и внедрение<br>облачных решений для<br>приема денег онлайн </h3>
-                                <p>Прием денег через интернет на сайт,<br>по ссылкам, через СБП,<br>через платежных агрегаторов<br>ЮКаssa, Продамус, Робокасса и др.<br>Или оплата на месте по QR-коду
-                                    <br><span class="btn btn-primary" style="background-color: #007bff00; border-color: #007bff00; font-weight: bold; font-size: 100%">От 3 000 рублей</span>
+                                {% for el in txt %}
+                                {% if el.chapter == 'Услуга 4' %}
+                                <h3>{{el.title|linebreaksbr}}</h3>
+                                <p>
+                                    {{el.text|linebreaksbr}}
+                                    <br><span class="btn btn-primary" style="background-color: #007bff00; border-color: #007bff00; font-weight: bold; font-size: 100%">{{el.price}}</span>
                                     <br><a style="margin-top: 2px;" href="javascript:show_exampleModal_3();" class="btn hvr-hollow btn-lg">оставить заявку</a>
                                 </p>
+                                {% endif %}
+                                {% endfor %}
                             </figcaption>
                         </figure>
                     </div>
@@ -360,11 +379,16 @@
                         <figure class="effect-text-two">
                             <img class="img-fluid" src="{% static 'main/img/5.  Маркировка, лицензирование, прослеживаемые товары, ФГИС, ЭДО.jpg' %}" alt=""/>
                             <figcaption>
-                                <h3>Маркировка,<br>лицензирование,<br>прослеживаемые товары,<br>ФГИС, ЭДО</h3>
-                                <p>Работа в системе “Честный знак”,<br>проведение маркировки,<br>занесение данных по товарам,<br>получение электронной подписи.<br>Настроим ЭДО,<br>внесем данные в ФГИС
-                                    <br><span class="btn btn-primary" style="background-color: #007bff00; border-color: #007bff00; font-weight: bold; font-size: 100%">От 3 000 рублей</span>
+                                {% for el in txt %}
+                                {% if el.chapter == 'Услуга 5' %}
+                                <h3>{{el.title|linebreaksbr}}</h3>
+                                <p>
+                                    {{el.text|linebreaksbr}}
+                                    <br><span class="btn btn-primary" style="background-color: #007bff00; border-color: #007bff00; font-weight: bold; font-size: 100%">{{el.price}}</span>
                                     <br><a style="margin-top: 2px;" href="javascript:show_exampleModal_3();" class="btn hvr-hollow btn-lg">оставить заявку</a>
                                 </p>
+                                {% endif %}
+                                {% endfor %}
                             </figcaption>
                         </figure>
                     </div>
@@ -372,11 +396,16 @@
                         <figure class="effect-text-two">
                             <img class="img-fluid" src="{% static 'main/img/6. Налоговые вопросы.jpg' %}" alt=""/>
                             <figcaption>
-                                <h3>Налоговые вопросы</h3>
-                                <p>Возьмем на себя общение с налоговой,<br>ответим на требования,<br>разберемся с недоимкой.<br>Получим патент.<br>Правильно заполним<br>и сдадим декларацию
-                                    <br><span class="btn btn-primary" style="background-color: #007bff00; border-color: #007bff00; font-weight: bold; font-size: 100%">От 4 000 рублей</span>
+                                {% for el in txt %}
+                                {% if el.chapter == 'Услуга 6' %}
+                                <h3>{{el.title|linebreaksbr}}</h3>
+                                <p>
+                                    {{el.text|linebreaksbr}}
+                                    <br><span class="btn btn-primary" style="background-color: #007bff00; border-color: #007bff00; font-weight: bold; font-size: 100%">{{el.price}}</span>
                                     <br><a style="margin-top: 2px;" href="javascript:show_exampleModal_3();" class="btn hvr-hollow btn-lg">оставить заявку</a>
                                 </p>
+                                {% endif %}
+                                {% endfor %}
                             </figcaption>
                         </figure>
                     </div>
@@ -384,11 +413,16 @@
                         <figure class="effect-text-two">
                             <img class="img-fluid" src="{% static 'main/img/7. Регистрация, ликвидация бизнеса.jpg' %}" alt=""/>
                             <figcaption>
-                                <h3>Регистрация,<br>ликвидация бизнеса</h3>
-                                <p>Проведем онлайн<br>регистрацию/ликвидацию/изменения<br>ООО, ИП.<br>Удаленно подадим уведомления в<br>Вестник и Федресурс.<br>Сдадим ликвидационную отчетность
-                                    <br><span class="btn btn-primary" style="background-color: #007bff00; border-color: #007bff00; font-weight: bold; font-size: 100%">От 8 000 рублей</span>
+                                {% for el in txt %}
+                                {% if el.chapter == 'Услуга 7' %}
+                                <h3>{{el.title|linebreaksbr}}</h3>
+                                <p>
+                                    {{el.text|linebreaksbr}}
+                                    <br><span class="btn btn-primary" style="background-color: #007bff00; border-color: #007bff00; font-weight: bold; font-size: 100%">{{el.price}}</span>
                                     <br><a style="margin-top: 2px;" href="javascript:show_exampleModal_3();" class="btn hvr-hollow btn-lg">оставить заявку</a>
                                 </p>
+                                {% endif %}
+                                {% endfor %}
                             </figcaption>
                         </figure>
                     </div>
@@ -396,11 +430,16 @@
                         <figure class="effect-text-two">
                             <img class="img-fluid" src="{% static 'main/img/8. Корпоративные юриддические задачи.jpg' %}" alt=""/>
                             <figcaption>
-                                <h3>Корпоративные<br>юридические задачи</h3>
-                                <p>Составим договоры,<br>понятно объясним<br>юридические тонкости,<br>проконсультируем,<br>поможем в составлении претензий<br>и урегулировании споров
-                                    <br><span class="btn btn-primary" style="background-color: #007bff00; border-color: #007bff00; font-weight: bold; font-size: 100%">От 5 000 рублей</span>
+                                {% for el in txt %}
+                                {% if el.chapter == 'Услуга 8' %}
+                                <h3>{{el.title|linebreaksbr}}</h3>
+                                <p>
+                                    {{el.text|linebreaksbr}}
+                                    <br><span class="btn btn-primary" style="background-color: #007bff00; border-color: #007bff00; font-weight: bold; font-size: 100%">{{el.price}}</span>
                                     <br><a style="margin-top: 2px;" href="javascript:show_exampleModal_3();" class="btn hvr-hollow btn-lg">оставить заявку</a>
                                 </p>
+                                {% endif %}
+                                {% endfor %}
                             </figcaption>
                         </figure>
                     </div>
@@ -409,10 +448,15 @@
                         <figure class="effect-text-two">
                             <img class="img-fluid" src="{% static 'main/img/9. Персональная помощь бизнес-ассистента под ваш запрос.jpg' %}" alt=""/>
                             <figcaption>
-                                <h3>Персональная помощь<br>бизнес-ассистента под<br>ваш запрос</h3>
-                                <p>Возможно ваш бизнес уникален и<br>требует персонального подхода в<br>решении нестандартных задач.<br>Расскажите нам о них.<br>Мы подберем оптимальные варианты
+                                {% for el in txt %}
+                                {% if el.chapter == 'Услуга 9' %}
+                                <h3>{{el.title|linebreaksbr}}</h3>
+                                <p>
+                                    {{el.text|linebreaksbr}}
                                     <br><a style="margin-top: 10px;" href="javascript:show_exampleModal_3();" class="btn hvr-hollow btn-lg">оставить заявку</a>
                                 </p>
+                                {% endif %}
+                                {% endfor %}
                             </figcaption>
                         </figure>
                     </div>
@@ -482,118 +526,130 @@
                 <p></p>
                 <div class="content_flip">
                     <a class="card" id="num_1">
+                        {% for el in txt2 %}
+                        {% if el.num == '1' %}
                         <div class="front">
                                 <img src="{% static 'main/img/free-icon-left-turn-arrow-1453.png' %}" alt="" style="position: relative;bottom: 170px;left: 275px;">
-                                <img src="{% static 'main/img/_DSC2991.jpg' %}" alt="">
+                                <img src="{{ el.img.url }}" alt="">
                         </div>
                         <div class="back">
                             <div>
                                 <div class="text-right"><img src="{% static 'main/img/free-icon-left-turn-arrow-1453.png' %}" alt="" style="position: relative;bottom: 30px; transform: scale(-1, 1)"></div>
-                                <h2>Екатерина</h2>
+                                <h2>{{el.name}}</h2>
                                 <br>
-                                <p>Открытый, добрый, честный человек,<br> стремящийся узнавать что-то новое.<br>
-                                    Ответственно и своевременно<br> справляется с большим объёмом<br> работы.<br>
-                                    Сотрудник, сочетающий в себе<br> педантичный, упорядоченный склад<br> ума и качества творческого человека</p>
+                                <p>{{el.about|linebreaksbr}}</p>
                             </div>
                         </div>
+                        {% endif %}
+                        {% endfor %}
                     </a>
                     <a class="card" id="num_2">
+                        {% for el in txt2 %}
+                        {% if el.num == '2' %}
                         <div class="front">
                             <img src="{% static 'main/img/free-icon-left-turn-arrow-1453.png' %}" alt="" style="position: relative;bottom: 170px;left: 275px;">
-                            <img src="{% static 'main/img/_DSC3204.jpg' %}" alt="">
+                            <img src="{{ el.img.url }}" alt="">
                         </div>
                         <div class="back">
                             <div>
                                 <div class="text-right"><img src="{% static 'main/img/free-icon-left-turn-arrow-1453.png' %}" alt="" style="position: relative;bottom: 30px; transform: scale(-1, 1)"></div>
-                                <h2>Надежда</h2>
+                                <h2>{{el.name}}</h2>
                                 <br>
-                                <p>Главный бухгалтер, аналитик<br> эксперт в вопросах<br> налогообложения, бухгалтерского<br> учета.
-                                    Опыт работы в данном направлении 25 лет.<br>Поможет разобраться в сложных<br> вопросах.<br>
-                                    В свободное от работы время<br>занимается Aeroyoga.</p>
+                                <p>{{el.about|linebreaksbr}}</p>
                             </div>
                         </div>
+                        {% endif %}
+                        {% endfor %}
                     </a>
                     <a class="card" id="num_3">
+                        {% for el in txt2 %}
+                        {% if el.num == '3' %}
                         <div class="front">
                             <img src="{% static 'main/img/free-icon-left-turn-arrow-1453.png' %}" alt="" style="position: relative;bottom: 170px;left: 275px;">
-                            <img src="{% static 'main/img/_DSC2907.jpg' %}" alt="">
+                            <img src="{{ el.img.url }}" alt="">
                         </div>
                         <div class="back">
                             <div>
                                 <div class="text-right"><img src="{% static 'main/img/free-icon-left-turn-arrow-1453.png' %}" alt="" style="position: relative;bottom: 30px; transform: scale(-1, 1)"></div>
-                                <h2>Мария</h2>
+                                <h2>{{el.name}}</h2>
                                 <br>
-                                <p>Яркая и целеустремлённая.<br>Любит порядок.<br>Ответственно относится к своим<br>
-                                    должностным поручениям.<br>Найдёт решение для любой<br> проблемы.<br>
-                                    Занимается саморазвитием,<br> осваивает новые навыки.</p>
+                                <p>{{el.about|linebreaksbr}}</p>
                             </div>
                         </div>
+                        {% endif %}
+                        {% endfor %}
                     </a>
                     <a class="card" id="num_4">
+                        {% for el in txt2 %}
+                        {% if el.num == '4' %}
                         <div class="front">
                             <img src="{% static 'main/img/free-icon-left-turn-arrow-1453.png' %}" alt="" style="position: relative;bottom: 170px;left: 275px;">
-                            <img src="{% static 'main/img/_DSC3575.jpg' %}" alt="">
+                            <img src="{{ el.img.url }}" alt="">
                         </div>
                         <div class="back">
                             <div>
                                 <div class="text-right"><img src="{% static 'main/img/free-icon-left-turn-arrow-1453.png' %}" alt="" style="position: relative;bottom: 30px; transform: scale(-1, 1)"></div>
-                                <h2>Юлия</h2>
+                                <h2>{{el.name}}</h2>
                                 <br>
-                                <p>Энергичная, позитивно мыслящая.<br>Умеет найти общий язык с любым клиентом.<br>
-                                    Готова сразу прийти на помощь, если что-то пошло не так.<br>
-                                    Постоянно улучшает свои<br> экспертные навыки в области<br> экономики и баскетбола.<br> Любит цифры.</p>
+                                <p>{{el.about|linebreaksbr}}</p>
                             </div>
                         </div>
+                        {% endif %}
+                        {% endfor %}
                     </a>
                     <a class="card" id="num_5">
+                        {% for el in txt2 %}
+                        {% if el.num == '5' %}
                         <div class="front">
                             <img src="{% static 'main/img/free-icon-left-turn-arrow-1453.png' %}" alt="" style="position: relative;bottom: 170px;left: 275px;">
-                            <img src="{% static 'main/img/_DSC3426.jpg' %}" alt="">
+                            <img src="{{ el.img.url }}" alt="">
                         </div>
                         <div class="back">
                             <div>
                                 <div class="text-right"><img src="{% static 'main/img/free-icon-left-turn-arrow-1453.png' %}" alt="" style="position: relative;bottom: 30px; transform: scale(-1, 1)"></div>
-                                <h2>Катерина</h2>
+                                <h2>{{el.name}}</h2>
                                 <br>
-                                <p>Наш юрист, которая подскажет,<br>как вести бизнес в рамках<br> правового поля,<br>
-                                    поможет в решение судебных тяжб.<br> Всегда в курсе последних<br> изменений в законодательстве.<br>
-                                    В свободное время воплощает в<br> жизнь свои творческие задумки.</p>
+                                <p>{{el.about|linebreaksbr}}</p>
                             </div>
                         </div>
+                        {% endif %}
+                        {% endfor %}
                     </a>
                     <a class="card" id="num_6">
+                        {% for el in txt2 %}
+                        {% if el.num == '6' %}
                         <div class="front">
                             <img src="{% static 'main/img/free-icon-left-turn-arrow-1453.png' %}" alt="" style="position: relative;bottom: 170px;left: 275px;">
-                            <img src="{% static 'main/img/_DSC3156.jpg' %}" alt="">
+                            <img src="{{ el.img.url }}" alt="">
                         </div>
                         <div class="back">
                             <div>
                                 <div class="text-right"><img src="{% static 'main/img/free-icon-left-turn-arrow-1453.png' %}" alt="" style="position: relative;bottom: 30px; transform: scale(-1, 1)"></div>
-                                <h2>Татьяна</h2>
+                                <h2>{{el.name}}</h2>
                                 <br>
-                                <p>Бухгалтер с профильным<br> образованием,<br> стаж работы более 8 лет.<br>
-                                    Имеет опыт консультанта по<br> программам 1С, ежегодно участвует<br>
-                                    в бухгалтерских конференциях.<br> Любит решать нестандартные<br>
-                                    задачи. Хобби-путешествия</p>
+                                <p>{{el.about|linebreaksbr}}</p>
                             </div>
                         </div>
+                        {% endif %}
+                        {% endfor %}
                     </a>
                     <a class="card" id="num_7">
+                        {% for el in txt2 %}
+                        {% if el.num == '7' %}
                         <div class="front">
                             <img src="{% static 'main/img/free-icon-left-turn-arrow-1453.png' %}" alt="" style="position: relative;bottom: 170px;left: 275px;">
-                            <img src="{% static 'main/img/DSC07232.png' %}" alt="">
+                            <img src="{{ el.img.url }}" alt="">
                         </div>
                         <div class="back">
                             <div>
                                 <div class="text-right"><img src="{% static 'main/img/free-icon-left-turn-arrow-1453.png' %}" alt="" style="position: relative;bottom: 30px; transform: scale(-1, 1)"></div>
-                                <h2>Елена</h2>
+                                <h2>{{el.name}}</h2>
                                 <br>
-                                <p>Руководитель с активной<br> жизненной позицией.<br> Имеет опыт работы в<br>
-                                    налоговых органах.<br> Поддерживает взаимовыгодное<br>
-                                    сотрудничество с клиентами и<br> демократичный стиль работы в<br>
-                                    коллективе.<br> Хобби-спорт, путешествия, йога</p>
+                                <p>{{el.about|linebreaksbr}}</p>
                             </div>
                         </div>
+                        {% endif %}
+                        {% endfor %}
                     </a>
                 </div>
             </div>
@@ -605,87 +661,22 @@
             <div class="row justify-content-center">
                 <div class="col-12">
                     <div class="owl-carousel testimonials-carousel wow">
-                        <div class="testimonial-item">
-                            <div class="row">
-                                <div class="col-md-12 col-lg-4">
-                                    <img src="{% static 'main/img/photo_2022-12-05_12-14-50.jpg' %}" class="testimonial-img img-fluid" style="padding-left: 10%;padding-right: 10%;margin-left: auto;margin-right: auto;margin-bottom: 10%;margin-top: 10%;" alt="">
-                                </div>
-                                <div class="col-md-12 col-lg-8" style="padding-left: 5%; padding-right: 5%; margin-top: auto;margin-bottom: auto;">
-
-                                    <div class="phone_zg text-center" style="margin-bottom: 1%;">Дентал Стори</div>
-                                    <div class="phone_wb" style="margin-left: 6px; text-align: left">
-                                        Я, Константин Асаенок, руководитель и главный врач авторской стоматологии "ДенталСтори". С первых дней работы моей клиники я начал сотрудничество с фирмой Бизнес Ассистент.
-                                        Мне важно было освободить себя от бизнес процессов и заниматься любимым делом. Именно это я и получил от коллектива BSA. На протяжении 5 лет все финансовые и налоговые вопросы находятся в их надежных руках,
-                                        ещё очень помогают в сборе документов для различных целей. В любое время я могу обратиться с задачей и получить компетентное решение.<br>
-                                        Сайт: <a href="https://dstoryclinic.ru/" target="_blank">https://dstoryclinic.ru/</a>
+                        {% for el in txt3 %}
+                            <div class="testimonial-item">
+                                <div class="row">
+                                    <div class="col-md-12 col-lg-4">
+                                        <img src="{{ el.img.url }}" class="testimonial-img img-fluid" style="padding-left: 10%;padding-right: 10%;margin-left: auto;margin-right: auto;margin-bottom: 10%;margin-top: 10%;" alt="">
+                                    </div>
+                                    <div class="col-md-12 col-lg-8" style="padding-left: 5%; padding-right: 5%; margin-top: auto;margin-bottom: auto;">
+                                        <div class="phone_zg text-center" style="margin-bottom: 1%;">{{ el.title }}</div>
+                                        <div class="phone_wb" style="margin-left: 6px; text-align: left">
+                                            {{ el.text }}<br>
+                                            Сайт: <a href="{{ el.href }}" target="_blank">{{ el.href }}</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="testimonial-item">
-                            <div class="row">
-                                <div class="col-md-12 col-lg-4" style="margin-top: 14px;">
-                                    <img src="{% static 'main/img/photo_2022-12-06_14-08-23.jpg' %}" class="testimonial-img img-fluid" style="padding-left: 10%;padding-right: 10%;margin-left: auto;margin-right: auto;margin-bottom: 10%;margin-top: 10%;" alt="">
-                                </div>
-                                <div class="col-md-12 col-lg-8" style="padding-left: 5%; padding-right: 5%; margin-top: auto;margin-bottom: auto;">
-
-                                    <div class="phone_zg text-center" style="margin-bottom: 1%;">Ginger Jackie</div>
-                                    <div class="phone_wb" style="margin-left: 6px; text-align: left">
-                                        Я, Екатерина Блинова, занимаюсь дизайном и пошивом женской одежды в ретро стиле. Я творческая натура.
-                                        Много времени уходит на подбор тканей, работу в ателье, создание контента для сайта и соцсетей. Поэтому, решила найти компанию,
-                                        которая помогала бы в бизнес-процессах. Первый опыт с крупной аутсорсинговой компанией получился не совсем удачный.
-                                        У них все клиенты стояли на потоке, не было персонального подхода и оперативности в решении вопросов.
-                                        В 2019г, я начала сотрудничать с Бизнес Ассистентом, моя работа значительно облегчилась.<br>
-                                        Сайт: <a href="https://gingerjackie.ru/" target="_blank">https://gingerjackie.ru/</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial-item">
-                            <div class="row">
-                                <div class="col-md-12 col-lg-4" style="margin-top: 14px;">
-                                    <img src="{% static 'main/img/Кадр 341572f091af2883c8168316fde77a62.png' %}" class="testimonial-img img-fluid" style="padding-left: 10%;padding-right: 10%;margin-left: auto;margin-right: auto;margin-bottom: 10%;margin-top: 10%;" alt="">
-                                </div>
-                                <div class="col-md-12 col-lg-8" style="padding-left: 5%; padding-right: 5%; margin-top: auto;margin-bottom: auto;">
-
-                                    <div class="phone_zg text-center" style="margin-bottom: 1%;">Юрист-Консалт</div>
-                                    <div class="phone_wb" style="margin-left: 6px; text-align: left">
-                                        Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                                        Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial-item">
-                            <div class="row">
-                                <div class="col-md-12 col-lg-4" style="margin-top: 14px;">
-                                    <img src="{% static 'main/img/Кадр 341572f091af2883c8168316fde77a62.png' %}" class="testimonial-img img-fluid" style="padding-left: 10%;padding-right: 10%;margin-left: auto;margin-right: auto;margin-bottom: 10%;margin-top: 10%;" alt="">
-                                </div>
-                                <div class="col-md-12 col-lg-8" style="padding-left: 5%; padding-right: 5%; margin-top: auto;margin-bottom: auto;">
-
-                                    <div class="phone_zg text-center" style="margin-bottom: 1%;">Юрист-Консалт</div>
-                                    <div class="phone_wb" style="margin-left: 6px; text-align: left">
-                                        Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                                        Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial-item">
-                            <div class="row">
-                                <div class="col-md-12 col-lg-4" style="margin-top: 14px;">
-                                    <img src="{% static 'main/img/Кадр 341572f091af2883c8168316fde77a62.png' %}" class="testimonial-img img-fluid" style="padding-left: 10%;padding-right: 10%;margin-left: auto;margin-right: auto;margin-bottom: 10%;margin-top: 10%;" alt="">
-                                </div>
-                                <div class="col-md-12 col-lg-8" style="padding-left: 5%; padding-right: 5%; margin-top: auto;margin-bottom: auto;">
-
-                                    <div class="phone_zg text-center" style="margin-bottom: 1%;">Юрист-Консалт</div>
-                                    <div class="phone_wb" style="margin-left: 6px; text-align: left">
-                                        Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                                        Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        {% endfor %}
                     </div>
                 </div>
             </div>
