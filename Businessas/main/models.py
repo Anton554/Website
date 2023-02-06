@@ -21,10 +21,10 @@ class Services(models.Model):
         verbose_name_plural = "Раздел услуги"
         verbose_name = 'Раздел услуг'
 
-    chapter = models.CharField('Номер услуги', max_length=1000)
     title = models.TextField('Заголовок', max_length=100)
     text = models.TextField('Текст', max_length=1000)
     price = models.CharField('Цена', max_length=1000)
+    chapter = models.CharField('Расположение', max_length=1000)
 
     def __str__(self):
         return self.title
