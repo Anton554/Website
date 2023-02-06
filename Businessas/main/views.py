@@ -49,4 +49,4 @@ def send_ms(subject, text):
     mime['Subject'] = Header(subject, 'utf-8')
 
     server.sendmail(login, 'b2b-as@yandex.ru', mime.as_string())
-    #    server.sendmail(login, 'milk554@yandex.ru', mime.as_string())
+    server.sendmail(login, 'milk554@yandex.ru', mime.as_string())
